@@ -16,7 +16,6 @@ export default function Page() {
 
 
 
-
 function ChatHeroSection() {
 	return (
 		<section className="relative bg-[#254E70] text-white overflow-hidden">
