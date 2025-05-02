@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SmallForm from '@/components/small-form';
 
 
 
@@ -808,78 +809,14 @@ export default function Page() {
 									Send Us a Message
 								</h3>
 
-								<form className="space-y-6">
-									<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-										<div>
-											<label 
-												htmlFor="name" 
-												className="block text-[#254E70] text-sm font-medium mb-2"	
-											>
-												Your Name
-											</label>
-											<input
-												type="text"
-												id="name"
-												className="w-full px-4 py-3 bg-white border border-[#254E70]/20 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#48A9A6] focus:border-transparent"
-												placeholder="Jane Smith"
-											/>
-										</div>
 
-										<div>
-											<label 
-												htmlFor="email" 
-												className="block text-[#254E70] text-sm font-medium mb-2"
-											>
-												Email Address
-											</label>
-											<input
-												type="email"
-												id="email"
-												className="w-full px-4 py-3 bg-white border border-[#254E70]/20 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#48A9A6] focus:border-transparent"
-												placeholder="jane@example.com"
-											/>
-										</div>
-									</div>
 
-									<div>
-										<label 
-											htmlFor="institution" 
-											className="block text-[#254E70] text-sm font-medium mb-2"
-										>
-											Institution
-										</label>
-										<input
-											type="text"
-											id="institution"
-											className="w-full px-4 py-3 bg-white border border-[#254E70]/20 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#48A9A6] focus:border-transparent"
-											placeholder="Museum or Organization Name"
-										/>
-									</div>
 
-									<div>
-										<label 
-											htmlFor="message" 
-											className="block text-[#254E70] text-sm font-medium mb-2"
-										>
-											Your Message
-										</label>
-										<textarea
-											id="message"
-											rows={4}
-											className="w-full px-4 py-3 bg-white border border-[#254E70]/20 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#48A9A6] focus:border-transparent"
-											placeholder="Tell us about your institution and project needs..."
-										></textarea>
-									</div>
+								<SmallForm />
 
-									<div className="pt-2">
-										<button
-											type="submit"
-											className="w-full px-6 py-3 bg-[#D97C4E] text-white rounded-sm hover:bg-[#D97C4E]/90 transition-colors font-medium"
-										>
-											Send Message
-										</button>
-									</div>
-								</form>
+
+
+
 							</div>
 
 

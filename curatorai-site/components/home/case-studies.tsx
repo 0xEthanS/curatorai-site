@@ -20,15 +20,26 @@ export default function CaseStudies() {
 			<div className="absolute -top-32 -left-32 w-64 h-64 bg-gradient-to-tl from-[#48A9A6]/10 to-transparent rounded-full blur-3xl"></div>
 			
 			<div className="container mx-auto px-6 relative z-10">
+
+
+
+
 				<div className="max-w-3xl mx-auto text-center mb-16">
-					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">SUCCESS STORIES</h4>
-					<h2 className="font-serif text-4xl md:text-5xl text-[#254E70] mb-6">Transformations in Action</h2>
+					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
+						SUCCESS STORIES
+					</h4>
+					<h2 className="font-serif text-4xl md:text-5xl text-[#254E70] mb-6">
+						Transformations in Action	
+					</h2>
 					<p className="text-[#254E70]/80">
-						See how cultural institutions are using our technology to enhance accessibility, 
-						engage audiences, and preserve their unique heritage.
+						See how cultural institutions are using headless wordpress and RAG Solutions to 
+						enhance accessibility, engage audiences, and preserve their unique heritage.
 					</p>
 				</div>
 				
+
+
+
 				{/* Featured Case Study */}
 				<div className="mb-16">
 					<div className="bg-[#F2EEE4] rounded-sm shadow-md overflow-hidden">
@@ -44,8 +55,12 @@ export default function CaseStudies() {
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
 												</svg>
 											</div>
-											<h3 className="font-serif text-2xl text-[#254E70]">The Metropolitan Art Museum</h3>
-											<p className="text-[#254E70]/70 mt-2 font-serif italic">"Where Collection Meets Connection"</p>
+											<h3 className="font-serif text-2xl text-[#254E70]">
+												The Metropolitan Art Museum
+											</h3>
+											<p className="text-[#254E70]/70 mt-2 font-serif italic">
+												"Where Collection Meets Connection"
+											</p>
 										</div>
 									</div>
 								</div>
@@ -68,27 +83,41 @@ export default function CaseStudies() {
 								
 								<p className="text-[#254E70]/80 mb-6">
 									The Metropolitan Art Museum needed to make their vast collection more 
-									accessible to both casual visitors and serious researchers. With CuratorAI's 
-									RAG implementation, they transformed how people discover and engage with art.
+									accessible to both casual visitors and serious researchers. With a RAG 
+									implementation, they transformed how people discover and engage with art.
 								</p>
 								
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 									<div className="bg-white p-4 rounded-sm shadow-sm">
-										<div className="text-[#D97C4E] font-mono text-xl mb-1">79%</div>
-										<div className="text-[#254E70]/80 text-sm">Increase in digital engagement</div>
+										<div className="text-[#D97C4E] font-mono text-xl mb-1">
+											79%
+										</div>
+										<div className="text-[#254E70]/80 text-sm">
+											Increase in digital engagement
+										</div>
 									</div>
 									
 									<div className="bg-white p-4 rounded-sm shadow-sm">
-										<div className="text-[#D97C4E] font-mono text-xl mb-1">93%</div>
-										<div className="text-[#254E70]/80 text-sm">Visitor satisfaction rating</div>
+										<div className="text-[#D97C4E] font-mono text-xl mb-1">
+											93%
+										</div>
+										<div className="text-[#254E70]/80 text-sm">
+											Visitor satisfaction rating
+										</div>
 									</div>
 									
 									<div className="bg-white p-4 rounded-sm shadow-sm">
-										<div className="text-[#D97C4E] font-mono text-xl mb-1">42%</div>
-										<div className="text-[#254E70]/80 text-sm">Reduction in basic staff inquiries</div>
+										<div className="text-[#D97C4E] font-mono text-xl mb-1">
+											42%
+										</div>
+										<div className="text-[#254E70]/80 text-sm">
+											Reduction in basic staff inquiries
+										</div>
 									</div>
 								</div>
 								
+
+					 			{/*
 								<div className="flex items-center justify-between">
 									<Link 
 										href="/case-studies/metropolitan-museum" 
@@ -104,11 +133,17 @@ export default function CaseStudies() {
 										Completed Q1 2024
 									</div>
 								</div>
+								*/}
+
+
 							</div>
 						</div>
 					</div>
 				</div>
 				
+
+
+
 				{/* Additional Case Studies Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{/* Case Study 1 */}
@@ -141,10 +176,16 @@ export default function CaseStudies() {
 							</p>
 							
 							<div className="flex items-center justify-between">
-								<div className="text-[#48A9A6] font-mono text-lg">3.5×</div>
-								<div className="text-[#254E70]/70 text-sm">Faster research time</div>
+								<div className="text-[#48A9A6] font-mono text-lg">
+									3.5×
+								</div>
+								<div className="text-[#254E70]/70 text-sm">
+									Faster research time
+								</div>
 							</div>
 							
+
+							{/*
 							<div className="mt-6 pt-4 border-t border-[#254E70]/10 flex justify-between items-center">
 								<Link 
 									href="/case-studies/national-archive" 
@@ -160,6 +201,9 @@ export default function CaseStudies() {
 									Q4 2023
 								</div>
 							</div>
+							*/}
+
+
 						</div>
 					</div>
 					
@@ -193,10 +237,16 @@ export default function CaseStudies() {
 							</p>
 							
 							<div className="flex items-center justify-between">
-								<div className="text-[#946B4A] font-mono text-lg">156%</div>
-								<div className="text-[#254E70]/70 text-sm">Increase in engagement</div>
+								<div className="text-[#946B4A] font-mono text-lg">
+									156%
+								</div>
+								<div className="text-[#254E70]/70 text-sm">
+									Increase in engagement
+								</div>
 							</div>
 							
+
+							{/*
 							<div className="mt-6 pt-4 border-t border-[#254E70]/10 flex justify-between items-center">
 								<Link 
 									href="/case-studies/maritime-museum" 
@@ -212,6 +262,9 @@ export default function CaseStudies() {
 									Q3 2023
 								</div>
 							</div>
+							*/}
+
+
 						</div>
 					</div>
 					
@@ -245,10 +298,16 @@ export default function CaseStudies() {
 							</p>
 							
 							<div className="flex items-center justify-between">
-								<div className="text-[#D97C4E] font-mono text-lg">64%</div>
-								<div className="text-[#254E70]/70 text-sm">More accessible experiences</div>
+								<div className="text-[#D97C4E] font-mono text-lg">
+									64%
+								</div>
+								<div className="text-[#254E70]/70 text-sm">
+									More accessible experiences
+								</div>
 							</div>
 							
+
+							{/*
 							<div className="mt-6 pt-4 border-t border-[#254E70]/10 flex justify-between items-center">
 								<Link 
 									href="/case-studies/museum-of-tomorrow" 
@@ -264,14 +323,22 @@ export default function CaseStudies() {
 									Q2 2023
 								</div>
 							</div>
+							*/}
+
+							
 						</div>
 					</div>
 				</div>
 				
-				{/* Client Logos */}
+
+
+
+				{/* Client Logos 
 				<div className="mt-24">
 					<div className="text-center mb-12">
-						<h3 className="font-serif text-2xl text-[#254E70] mb-4">Trusted by Leading Institutions</h3>
+						<h3 className="font-serif text-2xl text-[#254E70] mb-4">
+							Trusted by Leading Institutions
+						</h3>
 						<p className="text-[#254E70]/60 max-w-2xl mx-auto">
 							We're proud to partner with museums, galleries, archives, and cultural 
 							centers of all sizes around the world.
@@ -279,46 +346,62 @@ export default function CaseStudies() {
 					</div>
 					
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-						{/* Each of these would be actual client logos in production */}
+						
 						<div className="flex items-center justify-center py-4">
 							<div className="w-24 h-24 rounded-sm bg-[#254E70]/5 flex items-center justify-center">
-								<div className="font-serif text-[#254E70]/40 text-lg">Client Logo</div>
+								<div className="font-serif text-[#254E70]/40 text-lg">
+									Client Logo
+								</div>
 							</div>
 						</div>
 						
 						<div className="flex items-center justify-center py-4">
 							<div className="w-24 h-24 rounded-sm bg-[#254E70]/5 flex items-center justify-center">
-								<div className="font-serif text-[#254E70]/40 text-lg">Client Logo</div>
+								<div className="font-serif text-[#254E70]/40 text-lg">
+									Client Logo
+								</div>
 							</div>
 						</div>
 						
 						<div className="flex items-center justify-center py-4">
 							<div className="w-24 h-24 rounded-sm bg-[#254E70]/5 flex items-center justify-center">
-								<div className="font-serif text-[#254E70]/40 text-lg">Client Logo</div>
+								<div className="font-serif text-[#254E70]/40 text-lg">
+									Client Logo
+								</div>
 							</div>
 						</div>
 						
 						<div className="flex items-center justify-center py-4">
 							<div className="w-24 h-24 rounded-sm bg-[#254E70]/5 flex items-center justify-center">
-								<div className="font-serif text-[#254E70]/40 text-lg">Client Logo</div>
+								<div className="font-serif text-[#254E70]/40 text-lg">
+									Client Logo
+								</div>
 							</div>
 						</div>
 						
 						<div className="flex items-center justify-center py-4">
 							<div className="w-24 h-24 rounded-sm bg-[#254E70]/5 flex items-center justify-center">
-								<div className="font-serif text-[#254E70]/40 text-lg">Client Logo</div>
+								<div className="font-serif text-[#254E70]/40 text-lg">
+									Client Logo
+								</div>
 							</div>
 						</div>
 						
 						<div className="flex items-center justify-center py-4">
 							<div className="w-24 h-24 rounded-sm bg-[#254E70]/5 flex items-center justify-center">
-								<div className="font-serif text-[#254E70]/40 text-lg">Client Logo</div>
+								<div className="font-serif text-[#254E70]/40 text-lg">
+									Client Logo
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				*/}
 				
-				{/* CTA */}
+
+
+
+				{/* CTA 
 				<div className="mt-24 text-center">
 					<Link 
 						href="/case-studies" 
@@ -330,6 +413,12 @@ export default function CaseStudies() {
 						</svg>
 					</Link>
 				</div>
+				*/}
+
+
+
+
+
 			</div>
 		</section>
 	);
