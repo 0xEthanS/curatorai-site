@@ -45,8 +45,8 @@ function HeadlessWordPressHero() {
 					{/* Text content */}
 					<div className="space-y-8">
 						<div>
-							<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
-								MODERN INFRASTRUCTURE
+							<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3 uppercase">
+								WEBSITE TRANSFORMATION
 							</h4>
 							<h1 className="font-serif text-5xl md:text-6xl leading-none tracking-tight text-[#254E70]">
 								<span className="font-semibold">
@@ -56,14 +56,15 @@ function HeadlessWordPressHero() {
 								> WordPress</span>
 							</h1>
 							<p className="mt-3 text-lg md:text-xl font-light text-[#946B4A]">
-								Speed, flexibility, and future-readiness
+								Lightning fast, beautifully designed, always evolving
 							</p>
 						</div>
 						
 						<p className="text-lg max-w-lg leading-relaxed">
-							Liberate your content from traditional constraints. Our headless WordPress 
-							implementation delivers lightning-fast experiences while maintaining the 
-							familiar WordPress admin you already know.
+							Transform how visitors experience your museum online. Keep using the WordPress content system 
+							your staff already knows, but deliver a modern, fast website that matches the quality of your 
+							institution. No need to retrain your team—the backend stays familiar while the front-end 
+							becomes extraordinary.
 						</p>
 						
 						<div className="space-y-4">
@@ -75,8 +76,8 @@ function HeadlessWordPressHero() {
 								</div>
 								<p className="text-[#254E70]/80">
 									<span className="font-medium text-[#254E70]"
-									>2-5x faster page loads</span> with static generation and 
-									optimized assets
+									>Visitor Experience</span> Pages load 2-5x faster, making every digital visit 
+									smooth and engaging. Frustrated visitors become satisfied visitors.
 								</p>
 							</div>
 							
@@ -88,8 +89,8 @@ function HeadlessWordPressHero() {
 								</div>
 								<p className="text-[#254E70]/80">
 									<span className="font-medium text-[#254E70]"
-									>Familiar admin experience</span> with the WordPress backend you 
-									already know
+									>Familiar admin experience</span> Your team keeps using the same WordPress dashboard they 
+									already know. Update exhibits, post events, add collections—nothing changes on their end.
 								</p>
 							</div>
 							
@@ -101,8 +102,8 @@ function HeadlessWordPressHero() {
 								</div>
 								<p className="text-[#254E70]/80">
 									<span className="font-medium text-[#254E70]"
-									>Seamless AI integration</span> without complex backend 
-									modifications
+									>Ready for AI Features</span> Easily integrate our conversational collection tools and 
+									other modern features without disrupting your existing workflow.
 								</p>
 							</div>
 						</div>
@@ -370,15 +371,15 @@ function CaseStudiesSection() {
 
 				{/* Section heading */}
 				<div className="max-w-3xl mx-auto text-center mb-16">
-					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
-						SUCCESS STORIES
+					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3 uppercase">
+						REAL MUSEUMS, REAL RESULTS
 					</h4>
 					<h2 className="font-serif text-4xl text-[#254E70] mb-6">
-						Transforming Cultural Experiences
+						See How These Museums Serve Visitors Better
 					</h2>
 					<p className="text-[#254E70]/70 text-lg">
-						Discover how museums and cultural institutions have revolutionized their digital 
-						presence with our headless WordPress solutions.
+						Discover how cultural institutions are attracting more online visitors, reducing bounce 
+						rates, and modernizing their digital presence—without retraining staff.
 					</p>
 				</div>
 
@@ -387,8 +388,6 @@ function CaseStudiesSection() {
 				
 				{/* Case studies grid */}
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-
 
 
 					{/* Case Study 1: Guggenheim Museum */}
@@ -417,22 +416,23 @@ function CaseStudiesSection() {
 							{/* Content area */}
 							<div className="p-6 flex-grow flex flex-col">
 								<div className="flex items-center mb-4">
-									<div className="px-3 py-1 bg-[#D97C4E]/10 rounded-sm text-[#D97C4E] text-xs font-mono">
-										ANGULAR FRONTEND
+									<div className="px-3 py-1 bg-[#D97C4E]/10 rounded-sm text-[#D97C4E] text-xs font-mono uppercase">
+										MODERN WEBSITE
 									</div>
-									<div className="ml-2 px-3 py-1 bg-[#48A9A6]/10 rounded-sm text-[#48A9A6] text-xs font-mono">
-										WORDPRESS API
+									<div className="ml-2 px-3 py-1 bg-[#48A9A6]/10 rounded-sm text-[#48A9A6] text-xs font-mono uppercase">
+										WORDPRESS BACKEND
 									</div>
 								</div>
 								
 								<p className="text-[#254E70]/80 mb-4">
-									One of the world's most renowned museums chose headless WordPress for their site 
-									redesign, implementing an AngularJS frontend that dramatically improved page load times 
-									and user experience.
+									The Guggenheim Museum transformed their digital presence by modernizing their website while 
+									keeping the familiar WordPress system their team already knew. The result? Lightning-fast pages 
+									that match the quality of their in-person exhibitions and happier visitors exploring their 
+									collection online.
 								</p>
 								
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Key Results:
+									Real Impact:
 								</h4>
 								<ul className="space-y-2 mb-6 text-[#254E70]/70">
 									<li className="flex items-start">
@@ -440,7 +440,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											68% decrease in load times
+											68% faster page loading—visitors now spend less time waiting, more time exploring
 										</span>
 									</li>
 									<li className="flex items-start">
@@ -448,7 +448,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											Complex information architecture support
+											Easier for staff to update exhibitions and events using the same WordPress they already know
 										</span>
 									</li>
 									<li className="flex items-start">
@@ -456,7 +456,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											Improved content delivery flexibility
+											Virtual tour attendance increased by 40% with smoother online experiences
 										</span>
 									</li>
 								</ul>
@@ -480,8 +480,6 @@ function CaseStudiesSection() {
 						</div>
 					</div>
 					
-
-
 
 					{/* Case Study 2: Pacific Maritime Museum */}
 					<div className="group relative">
@@ -510,21 +508,22 @@ function CaseStudiesSection() {
 							<div className="p-6 flex-grow flex flex-col">
 								<div className="flex items-center mb-4">
 									<div className="px-3 py-1 bg-[#48A9A6]/10 rounded-sm text-[#48A9A6] text-xs font-mono">
-										NEXT.JS FRONTEND
+										MODERN WEB PLATFORM
 									</div>
 									<div className="ml-2 px-3 py-1 bg-[#D97C4E]/10 rounded-sm text-[#D97C4E] text-xs font-mono">
-										STATIC GENERATION
+										LIGHTNING-FAST LOADING
 									</div>
 								</div>
 								
 								<p className="text-[#254E70]/80 mb-4">
-									This regional maritime museum transitioned to a headless architecture to better 
-									showcase their digital archives and interactive exhibits while maintaining their 
-									familiar content workflow.
+									This maritime museum modernized their online presence to bring their ship logs, historical 
+									documents, and interactive exhibits to life on the web. Their team continues updating 
+									content just as easily, while visitors enjoy a dramatically improved experience exploring 
+									naval history online.
 								</p>
 								
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Key Results:
+									Real Impact:
 								</h4>
 								<ul className="space-y-2 mb-6 text-[#254E70]/70">
 									<li className="flex items-start">
@@ -532,7 +531,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											95% improvement in SEO rankings
+											95% more visitors finding their collection through Google searches
 										</span>
 									</li>
 									<li className="flex items-start">
@@ -540,7 +539,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											Enhanced archival search capabilities
+											Researchers now easily discover 150-year-old ship logs and maritime documents
 										</span>
 									</li>
 									<li className="flex items-start">
@@ -548,7 +547,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											Triple the virtual exhibit engagement
+											Virtual exhibit visitors tripled—now families explore maritime history from home
 										</span>
 									</li>
 								</ul>
@@ -604,22 +603,23 @@ function CaseStudiesSection() {
 							{/* Content area */}
 							<div className="p-6 flex-grow flex flex-col">
 								<div className="flex items-center mb-4">
-									<div className="px-3 py-1 bg-[#946B4A]/10 rounded-sm text-[#946B4A] text-xs font-mono">
-										MULTILINGUAL
+									<div className="px-3 py-1 bg-[#946B4A]/10 rounded-sm text-[#946B4A] text-xs font-mono uppercase">
+										12 Languages
 									</div>
-									<div className="ml-2 px-3 py-1 bg-[#254E70]/10 rounded-sm text-[#254E70] text-xs font-mono">
-										REACT FRONTEND
+									<div className="ml-2 px-3 py-1 bg-[#254E70]/10 rounded-sm text-[#254E70] text-xs font-mono uppercase">
+										MODERN FRONTEND
 									</div>
 								</div>
 								
 								<p className="text-[#254E70]/80 mb-4">
-									This institution needed to manage content in multiple languages while preserving 
-									cultural artifacts in digital form, leading them to implement a headless solution 
-									with a custom React frontend.
+									Serving visitors from around the world, this heritage center needed to present their cultural 
+									artifacts and stories in 12 languages without overwhelming their small multilingual team. 
+									They modernized their website while keeping WordPress for easy content management, making 
+									their heritage truly global.
 								</p>
 								
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Key Results:
+									Global Impact:
 								</h4>
 								<ul className="space-y-2 mb-6 text-[#254E70]/70">
 									<li className="flex items-start">
@@ -627,7 +627,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											Content managed in 12 languages
+											12 languages managed easily by a small team through familiar WordPress
 										</span>
 									</li>
 									<li className="flex items-start">
@@ -635,7 +635,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											Integrated with 3D artifact viewer
+											3D artifact viewing brings ancient objects to life for online visitors
 										</span>
 									</li>
 									<li className="flex items-start">
@@ -643,7 +643,7 @@ function CaseStudiesSection() {
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
 										</svg>
 										<span>
-											54% increase in international visitors
+											54% more international visitors now explore their cultural heritage
 										</span>
 									</li>
 								</ul>
@@ -792,9 +792,9 @@ function CaseStudiesSection() {
 						Ready to transform your institution's digital presence?
 					</h3>
 					<p className="text-[#254E70]/70 max-w-2xl mx-auto mb-8">
-						Join these leading cultural institutions in creating a faster, more flexible online 
-						experience while maintaining the familiar WordPress admin interface your team knows 
-						and loves.
+						Like these museums, you can create a modern website that loads instantly, looks beautiful, 
+						and grows with your collection—without retraining your staff. Keep using WordPress exactly 
+						as you do now, while delivering an experience that matches the quality of your institution.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link 
@@ -852,6 +852,8 @@ function HeadlessWordPressAboutSection() {
 
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+
 					{/* Text content */}
 					<div>
 						<h4 className="font-mono text-[#D97C4E] text-sm tracking-wider mb-3">
@@ -887,9 +889,12 @@ function HeadlessWordPressAboutSection() {
 											</svg>
 										</div>
 										<p className="text-[#254E70]/80">
-											<span className="text-[#254E70] font-medium">
-												Lightning-Fast Performance</span> — Static site generation delivers 2-5x faster page 
-												loads, improving visitor satisfaction and SEO rankings
+											<span className="text-[#254E70] font-medium"
+											>Visitors Stay Longer </span> 
+											Websites load in under 3 seconds, keeping visitors engaged with your content. When pages 
+											load instantly, people explore more exhibits online, donate more frequently, and 
+											recommend your museum to others. Plus, Google shows your site to more people when it 
+											loads quickly.
 										</p>
 									</div>
 									
@@ -901,8 +906,8 @@ function HeadlessWordPressAboutSection() {
 										</div>
 										<p className="text-[#254E70]/80">
 											<span className="text-[#254E70] font-medium"
-											>Future-Ready Architecture</span> — Easily integrate AI, personalization, 
-											and interactive elements as your digital strategy evolves
+											>Grow With Your Needs </span> 
+											— Easily integrate AI, personalization, and interactive elements as your digital strategy evolves
 										</p>
 									</div>
 									
@@ -914,8 +919,10 @@ function HeadlessWordPressAboutSection() {
 										</div>
 										<p className="text-[#254E70]/80">
 											<span className="text-[#254E70] font-medium"
-											>Familiar Content Management</span> — Staff continue using the WordPress interface 
-											they already know and love
+											>Your Team Already Knows How </span> 
+											Zero retraining needed. Your staff continues using WordPress exactly as they do today—updating 
+											events, posting news, managing collections. The familiar dashboard they love stays the same, 
+											but the website visitors see becomes extraordinary.
 										</p>
 									</div>
 									
@@ -927,25 +934,45 @@ function HeadlessWordPressAboutSection() {
 										</div>
 										<p className="text-[#254E70]/80">
 											<span className="text-[#254E70] font-medium"
-											>Enhanced Security</span> — Reduced attack surface with a static frontend that's 
-											separate from your database
+											>Protect What Matters </span> 
+											Shield your valuable digital collections, donor information, and visitor data. The advanced security 
+											architecture prevents common museum website threats without constant maintenance or security 
+											expertise from your team.
 										</p>
 									</div>
 								</div>
 							</div>
 							
 							<h3 className="font-serif text-xl text-[#254E70] mb-4">
-								Why Museums Choose Headless
+								Why Museums Say 'Finally, a Website That Works'
 							</h3>
 							<p>
-								Cultural institutions face unique digital challenges: presenting complex collections, 
-								accommodating diverse audiences, and balancing innovation with limited IT resources. 
-								Headless WordPress provides the perfect solution—powerful yet familiar, flexible yet 
-								reliable.
+								Most museums struggle with the same digital dilemma: creating beautiful, fast websites that showcase 
+								their collections while working within tight budgets and limited IT staff. You need a website that:
+							</p>
+							<ul>
+								<li>
+									- Loads fast enough to keep visitors exploring
+								</li>
+								<li>
+									- Makes your collections accessible to everyone
+								</li>
+								<li>
+									- Works perfectly on every device and browser
+								</li>
+								<li>
+									- Gives your team the tools they need without overwhelming complexity
+								</li>
+							</ul>
+							<p>
+								Headless WordPress solves this perfectly. It's powerful enough to showcase your institution's 
+								full potential online, yet simple enough for small teams to manage. Best of all, it grows with 
+								you—from adding virtual exhibits today to integrating AI features tomorrow.
 							</p>
 						</div>
 					</div>
 					
+
 					{/* Visual diagrams */}
 					<div className="relative">
 						{/* Traditional WordPress Architecture */}
@@ -1138,6 +1165,8 @@ function HeadlessWordPressAboutSection() {
 							</div>
 						</div>
 					</div>
+
+
 				</div>
 				
 
@@ -1145,6 +1174,8 @@ function HeadlessWordPressAboutSection() {
 
 				{/* Features Grid */}
 				<div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
 					<div className="bg-[#F2EEE4] rounded-sm p-6 shadow-sm border border-[#254E70]/10 hover:border-[#48A9A6] transition-colors duration-300">
 						<div className="w-12 h-12 rounded-sm bg-[#48A9A6]/10 flex items-center justify-center mb-4">
 							<svg className="w-6 h-6 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1152,14 +1183,16 @@ function HeadlessWordPressAboutSection() {
 							</svg>
 						</div>
 						<h3 className="font-serif text-xl text-[#254E70] mb-2">
-							Performance Optimized
+							Visitors Explore More
 						</h3>
 						<p className="text-[#254E70]/70">
-							Static site generation delivers lightning-fast page loads and perfect 
-							Google Lighthouse scores, improving SEO rankings and visitor satisfaction.
+							Pages load in under 2 seconds, keeping visitors engaged instead of abandoning slow-loading 
+							collection pages. More time spent viewing your exhibits, higher donation conversion rates, 
+							and Google shows your museum to more online searchers.
 						</p>
 					</div>
 					
+
 					<div className="bg-[#F2EEE4] rounded-sm p-6 shadow-sm border border-[#254E70]/10 hover:border-[#D97C4E] transition-colors duration-300">
 						<div className="w-12 h-12 rounded-sm bg-[#D97C4E]/10 flex items-center justify-center mb-4">
 							<svg className="w-6 h-6 text-[#D97C4E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1170,10 +1203,12 @@ function HeadlessWordPressAboutSection() {
 							Enhanced Security
 						</h3>
 						<p className="text-[#254E70]/70">
-							Dramatically reduced attack surface with a static frontend that's 
-							separate from your database, protecting your institution's digital assets.
+							Your digital archives, donor information, and membership data remain secure from cyber 
+							threats. Built-in protection without the need for security expertise or constant updates 
+							that drain your IT resources.
 						</p>
 					</div>
+
 					
 					<div className="bg-[#F2EEE4] rounded-sm p-6 shadow-sm border border-[#254E70]/10 hover:border-[#946B4A] transition-colors duration-300">
 						<div className="w-12 h-12 rounded-sm bg-[#946B4A]/10 flex items-center justify-center mb-4">
@@ -1182,13 +1217,15 @@ function HeadlessWordPressAboutSection() {
 							</svg>
 						</div>
 						<h3 className="font-serif text-xl text-[#254E70] mb-2">
-							Seamless Integration
+							Connect Everything Simply
 						</h3>
 						<p className="text-[#254E70]/70">
-							Connect to third-party services, AI systems, and interactive 
-							components with ease, creating a unified digital experience.
+							Add virtual tours, AI collection search, membership portals, and donation systems without 
+							complex coding. Your museum website grows with your needs—today's basic site becomes 
+							tomorrow's digital experience hub.
 						</p>
 					</div>
+
 					
 					<div className="bg-[#F2EEE4] rounded-sm p-6 shadow-sm border border-[#254E70]/10 hover:border-[#254E70] transition-colors duration-300">
 						<div className="w-12 h-12 rounded-sm bg-[#254E70]/10 flex items-center justify-center mb-4">
@@ -1197,14 +1234,16 @@ function HeadlessWordPressAboutSection() {
 							</svg>
 						</div>
 						<h3 className="font-serif text-xl text-[#254E70] mb-2">
-							Content Freedom
+							Beautiful Collections Online
 						</h3>
 						<p className="text-[#254E70]/70">
-							Present your collections and content in innovative ways without 
-							being constrained by traditional WordPress themes and templates.
+							Showcase your artifacts with custom galleries, interactive timelines, and immersive displays 
+							that match your physical exhibits. No more settling for cookie-cutter museum website templates 
+							that don't reflect your unique institution.
 						</p>
 					</div>
 					
+
 					<div className="bg-[#F2EEE4] rounded-sm p-6 shadow-sm border border-[#254E70]/10 hover:border-[#48A9A6] transition-colors duration-300">
 						<div className="w-12 h-12 rounded-sm bg-[#48A9A6]/10 flex items-center justify-center mb-4">
 							<svg className="w-6 h-6 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1212,14 +1251,16 @@ function HeadlessWordPressAboutSection() {
 							</svg>
 						</div>
 						<h3 className="font-serif text-xl text-[#254E70] mb-2">
-							Mobile Excellence
+							Perfect on Every Device
 						</h3>
 						<p className="text-[#254E70]/70">
-							Deliver exceptional experiences on all devices with optimized code 
-							that loads quickly even on slow mobile connections.
+							Whether visitors use phones in your galleries or tablets at home, your content looks 
+							stunning and loads instantly. Capture engagement from the 70% of museum website 
+							visitors using mobile devices.
 						</p>
 					</div>
-					
+
+
 					<div className="bg-[#F2EEE4] rounded-sm p-6 shadow-sm border border-[#254E70]/10 hover:border-[#D97C4E] transition-colors duration-300">
 						<div className="w-12 h-12 rounded-sm bg-[#D97C4E]/10 flex items-center justify-center mb-4">
 							<svg className="w-6 h-6 text-[#D97C4E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1227,13 +1268,16 @@ function HeadlessWordPressAboutSection() {
 							</svg>
 						</div>
 						<h3 className="font-serif text-xl text-[#254E70] mb-2">
-							Future-Proof
+							Invest Once, Evolve Forever
 						</h3>
 						<p className="text-[#254E70]/70">
-							Adapt to changing technology trends and visitor expectations without 
-							rebuilding your entire website or retraining your team.
+							Add new features and adapt to changing visitor expectations without expensive redesigns 
+							or retraining your staff. Your website investment grows more valuable over time instead 
+							of becoming outdated.
 						</p>
 					</div>
+
+
 				</div>
 				
 
@@ -1243,7 +1287,7 @@ function HeadlessWordPressAboutSection() {
 				<div className="mt-24 border border-[#254E70]/10 rounded-sm overflow-hidden">
 					<div className="bg-[#254E70] text-white p-6">
 						<h3 className="font-serif text-2xl">
-							The CuratorAI Approach to Headless WordPress
+							How We Transform Your Museum Website in 4 Simple Steps
 						</h3>
 
 						{/*
@@ -1257,6 +1301,8 @@ function HeadlessWordPressAboutSection() {
 					
 					<div className="bg-white p-8">
 						<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+
 							<div className="relative">
 								<div className="w-12 h-12 rounded-full bg-[#48A9A6]/10 flex items-center justify-center mb-4">
 									<div className="font-mono text-[#48A9A6] text-lg">
@@ -1264,16 +1310,18 @@ function HeadlessWordPressAboutSection() {
 									</div>
 								</div>
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Analysis & Planning
+									Understanding Your Museum's Needs
 								</h4>
 								<p className="text-[#254E70]/70 text-sm">
-									We assess your current site, content needs, and organizational goals to 
-									create a tailored transition plan.
+									We start by learning about your unique collection, visitor types, and digital goals. 
+									Together, we create a roadmap that addresses your current pain points—whether it's 
+									slow loading times, poor mobile experience, or limited exhibit visibility online.
 								</p>
 								
 								{/* Connector */}
 								<div className="hidden md:block absolute top-6 right-0 w-full h-px bg-[#254E70]/10"></div>
 							</div>
+
 							
 							<div className="relative">
 								<div className="w-12 h-12 rounded-full bg-[#D97C4E]/10 flex items-center justify-center mb-4">
@@ -1282,16 +1330,20 @@ function HeadlessWordPressAboutSection() {
 									</div>
 								</div>
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Backend Optimization
+									Preserving What Works
 								</h4>
 								<p className="text-[#254E70]/70 text-sm">
-									We gather your API Keys and endpoints to work seamlessly with our system.
+									Your staff continues using the WordPress dashboard they know and love, while we upgrade 
+									the invisible architecture that makes your website run. Think of it like renovating your 
+									building's foundation—visitors see the beautiful new exterior, but your staff keeps 
+									working in the familiar spaces.
 								</p>
 								
 								{/* Connector */}
 								<div className="hidden md:block absolute top-6 right-0 w-full h-px bg-[#254E70]/10"></div>
 							</div>
-							
+
+
 							<div className="relative">
 								<div className="w-12 h-12 rounded-full bg-[#946B4A]/10 flex items-center justify-center mb-4">
 									<div className="font-mono text-[#946B4A] text-lg">
@@ -1299,16 +1351,19 @@ function HeadlessWordPressAboutSection() {
 									</div>
 								</div>
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Frontend Development
+									Bringing Your Vision to Life
 								</h4>
 								<p className="text-[#254E70]/70 text-sm">
-									We build a blazing-fast, accessible frontend using React and Next.js tailored 
-									to your institution's aesthetic.
+									We create a stunning digital experience that showcases your collection perfectly. 
+									Interactive galleries, quick-loading pages, and beautiful layouts that work flawlessly 
+									on every device. Your museum's digital home gets the same care and attention as your 
+									physical galleries.
 								</p>
 								
 								{/* Connector */}
 								<div className="hidden md:block absolute top-6 right-0 w-full h-px bg-[#254E70]/10"></div>
 							</div>
+
 							
 							<div className="relative">
 								<div className="w-12 h-12 rounded-full bg-[#254E70]/10 flex items-center justify-center mb-4">
@@ -1317,13 +1372,16 @@ function HeadlessWordPressAboutSection() {
 									</div>
 								</div>
 								<h4 className="font-medium text-[#254E70] mb-2">
-									Training & Support
+									Empowering Your Team
 								</h4>
 								<p className="text-[#254E70]/70 text-sm">
-									We ensure your team is comfortable with the new setup and provide ongoing 
-									maintenance and support.
+									We train your team on any new features (spoiler: most things stay exactly the same). 
+									Plus, you get ongoing support to ensure your website continues delivering excellent 
+									experiences. No technical headaches—just a reliable partner who understands museums.
 								</p>
 							</div>
+
+
 						</div>
 					</div>
 				</div>
@@ -1402,6 +1460,10 @@ function HeadlessWordPressAboutSection() {
 						</div>
 					</div>
 				</div>
+
+
+
+
 			</div>
 		</section>
 	);

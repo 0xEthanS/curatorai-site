@@ -26,7 +26,7 @@ export default function Hero() {
 						{/* Text content */}
 						<div className="space-y-8">
 							<div>
-								<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
+								<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3 uppercase">
 									INTRODUCING
 								</h4>
 								<h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-none tracking-tight text-[#254E70]">
