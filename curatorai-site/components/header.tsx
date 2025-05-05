@@ -40,6 +40,10 @@ export default function Header() {
 						</div>
 					</Link>
 					
+
+
+
+
 					{/* Desktop Navigation */}
 					<nav className="hidden md:flex items-center space-x-8">
 						<Link href="/chat" className="text-[#254E70] hover:text-[#D97C4E] transition-colors py-2">
@@ -55,6 +59,10 @@ export default function Header() {
 							Contact
 						</Link>
 					</nav>
+					
+
+
+
 					
 					{/* CTA Button */}
 					<div className="hidden md:block">

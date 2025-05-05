@@ -35,8 +35,6 @@ function ChatHeroSection() {
 			<div className="absolute inset-0 bg-gradient-to-b from-[#254E70] via-[#254E70] to-[#1A3550] opacity-100"></div>
 			
 
-
-
 			{/* Decorative grid pattern */}
 			<div className="absolute inset-0 opacity-[0.05]" 
 					 style={{
@@ -45,8 +43,6 @@ function ChatHeroSection() {
 					 }}>
 			</div>
 			
-
-
 
 			{/* Sunset circle graphic */}
 			<div className="absolute right-0 top-0 w-full h-full">
@@ -58,8 +54,6 @@ function ChatHeroSection() {
 					</div>
 				</div>
 			</div>
-
-
 
 
 			{/* Bookshelf silhouette */}
@@ -116,8 +110,6 @@ function ChatHeroSection() {
 			</div>
 
 
-
-			
 			{/* Mountains silhouette */}
 			<div className="absolute bottom-0 left-0 right-0 h-64">
 				<svg width="100%" height="100%" viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
@@ -129,8 +121,6 @@ function ChatHeroSection() {
 				</svg>
 			</div>
 			
-
-
 
 			{/* Small figures silhouette */}
 			<div className="absolute bottom-12 left-0 right-0 h-16">
@@ -153,6 +143,9 @@ function ChatHeroSection() {
 					{/* Text content */}
 					<div className="lg:col-span-2 space-y-8">
 						<div>
+							<h4 className="font-mono text-[#FE5F55] text-sm tracking-wider mb-3 uppercase">
+								Your entire collection, instantly accessible
+							</h4>
 							<h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-none tracking-tight text-white">
 								<span className="font-semibold">
 									curator
@@ -162,13 +155,15 @@ function ChatHeroSection() {
 								</span>
 							</h1>
 							<p className="mt-3 text-lg md:text-xl font-light text-[#F2EEE4]">
-								Where knowledge begins with a question
+								Unlock hidden treasures in your archives through simple conversation
 							</p>
 						</div>
 						
 						<p className="text-lg max-w-lg leading-relaxed text-[#F2EEE4]/90">
-							Access the collective wisdom of your institution through natural conversation. 
-							Our intelligent chat interface brings your archives and collections to life.
+							Your institution holds thousands of documents, photographs, and artifacts—most 
+							visitors only experience a fraction. curatorChat acts as a digital guide, 
+							connecting visitors directly to your complete collection through natural 
+							conversation, while freeing your staff for specialized interactions.
 						</p>
 						
 						<div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -319,6 +314,10 @@ function ChatHeroSection() {
 			{/* Key features */}
 			<div className="container mx-auto px-6 pb-16 relative z-10">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+
+					
 					<div className="bg-white/10 backdrop-blur-sm rounded-sm p-6">
 						<div className="w-10 h-10 rounded-sm bg-[#48A9A6] bg-opacity-20 flex items-center justify-center mb-4">
 							<svg className="w-5 h-5 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -329,10 +328,15 @@ function ChatHeroSection() {
 							Natural Conversations
 						</h3>
 						<p className="text-[#F2EEE4]/80">
-							Interact with your collections through intuitive dialogue rather than rigid search queries.
+							Like Having Your Expert Guide Available 24/7 Visitors ask questions naturally 
+							and receive knowledgeable responses drawing from your entire collection—no 
+							complicated search terms needed.
 						</p>
 					</div>
 					
+
+
+
 					<div className="bg-white/10 backdrop-blur-sm rounded-sm p-6">
 						<div className="w-10 h-10 rounded-sm bg-[#D97C4E] bg-opacity-20 flex items-center justify-center mb-4">
 							<svg className="w-5 h-5 text-[#D97C4E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -343,10 +347,14 @@ function ChatHeroSection() {
 							Source Attribution - Option
 						</h3>
 						<p className="text-[#F2EEE4]/80">
-							Every response can cite original sources, maintaining academic rigor and 
-							institutional credibility.
+							Academic Credibility Built In Every answer cites your original materials, 
+							enabling visitors to explore deeper while maintaining the scholarly standards 
+							your institution values.
 						</p>
 					</div>
+					
+
+
 					
 					<div className="bg-white/10 backdrop-blur-sm rounded-sm p-6">
 						<div className="w-10 h-10 rounded-sm bg-[#F2EEE4] bg-opacity-20 flex items-center justify-center mb-4">
@@ -358,10 +366,15 @@ function ChatHeroSection() {
 							Visitor Engagement
 						</h3>
 						<p className="text-[#F2EEE4]/80">
-							Transform passive viewers into active participants through meaningful 
-							interaction with your collections.
+							Bring Overlooked Collections to Light Visitors discover relevant materials they 
+							would have missed through traditional browsing, increasing engagement with 
+							underutilized archives by up to 70%.
 						</p>
 					</div>
+
+
+
+					
 				</div>
 			</div>
 
@@ -371,17 +384,6 @@ function ChatHeroSection() {
 		</section>
 	);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -411,15 +413,15 @@ function RAGCaseStudiesSection() {
 				
 				{/* Section heading */}
 				<div className="max-w-3xl mx-auto text-center mb-16">
-					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
-						SUCCESS STORIES
+					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3 uppercase">
+						PROVEN RESULTS
 					</h4>
 					<h2 className="font-serif text-4xl text-[#254E70] mb-6">
-						Knowledge Unlocked
+						Bringing Collections to Life
 					</h2>
 					<p className="text-[#254E70]/80 text-lg">
-						Discover how RAG technology is transforming access to cultural knowledge and 
-						enhancing visitor experiences around the world.
+						See how museums and historical centers are connecting visitors with previously 
+						hidden treasures and measuring real impact.
 					</p>
 				</div>
 				
@@ -428,6 +430,8 @@ function RAGCaseStudiesSection() {
 
 				{/* Case studies */}
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+
 					{/* Case Study 1: Metropolitan Art Museum */}
 					<div className="bg-white rounded-sm overflow-hidden border border-[#254E70]/10 hover:border-[#D97C4E]/30 transition-all duration-300 shadow-sm group hover:shadow-md">
 						<div className="p-6">
@@ -455,9 +459,9 @@ function RAGCaseStudiesSection() {
 							<div className="mb-6">
 								<div className="text-sm text-[#254E70]/60 mb-1">Solution</div>
 								<p className="text-[#254E70]/90">
-									Implemented a RAG system that connects their exhibition catalog, scholarly 
-									publications, and visitor guide content into a unified knowledge base accessible 
-									through natural language queries.
+									Introduced a Digital Guide (RAG System) that instantly searches through their entire collection, 
+									scholarly publications, and visitor guide content so visitors can now have natural conversations 
+									about any artwork, just as they would with an expert guide.
 								</p>
 							</div>
 
@@ -519,6 +523,7 @@ function RAGCaseStudiesSection() {
 						</div>
 					</div>
 					
+
 					{/* Case Study 2: National Historical Archive */}
 					<div className="bg-white rounded-sm overflow-hidden border border-[#254E70]/10 hover:border-[#48A9A6]/30 transition-all duration-300 shadow-sm group hover:shadow-md">
 						<div className="p-6">
@@ -546,9 +551,10 @@ function RAGCaseStudiesSection() {
 							<div className="mb-6">
 								<div className="text-sm text-[#254E70]/60 mb-1">Solution</div>
 								<p className="text-[#254E70]/90">
-									Deployed a comprehensive RAG system with specialized historical document processing, 
-									multi-language support, and domain-specific retrieval to make the archive accessible to 
-									both researchers and the public.
+									Created an intelligent archive navigator (RAG System) that can read and understand historical 
+									documents in any language or format, including handwritten records and specialized historical 
+									terminology. Now both researchers and the public can search the archives through simple 
+									conversation.
 								</p>
 							</div>
 
@@ -609,13 +615,15 @@ function RAGCaseStudiesSection() {
 
 						</div>
 					</div>
+
 					
 					{/* Case Study 3: Museum of Tomorrow */}
 					<div className="bg-white rounded-sm overflow-hidden border border-[#254E70]/10 hover:border-[#946B4A]/30 transition-all duration-300 shadow-sm group hover:shadow-md">
 						<div className="p-6">
 							<div className="flex items-center justify-between mb-6">
 								<div className="font-serif text-2xl text-[#254E70]">
-									Museum of Tomorrow</div>
+									Museum of Tomorrow
+								</div>
 								<div className="w-12 h-12 rounded-sm bg-[#946B4A]/20 flex items-center justify-center">
 									<svg className="w-6 h-6 text-[#946B4A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -637,9 +645,9 @@ function RAGCaseStudiesSection() {
 									Solution
 								</div>
 								<p className="text-[#254E70]/90">
-									Enhanced their existing IRIS+ chatbot with RAG technology, integrating real-time 
-									exhibit information, scientific journals, and accessibility adaptations for visitors 
-									with various needs.
+									Upgraded their visitor guide chatbot to become a smart personal museum assistant. Now it 
+									instantly accesses all exhibit information and scientific resources, while adapting 
+									answers for visitors with different abilities and learning styles.
 								</p>
 							</div>
 
@@ -700,6 +708,8 @@ function RAGCaseStudiesSection() {
 
 						</div>
 					</div>
+
+
 				</div>
 				
 
@@ -710,12 +720,12 @@ function RAGCaseStudiesSection() {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 						<div>
 							<h3 className="font-serif text-2xl text-[#254E70] mb-6">
-								How Our RAG Implementation Works
+								From Archive to Answer: How Your Collection Becomes Conversational (Implementing a RAG System)
 							</h3>
 							<p className="text-[#254E70]/80 mb-6">
-								CuratorAI's Retrieval Augmented Generation system connects your visitors 
-								with your institution's knowledge base through an intelligent, contextual 
-								understanding of your collections and resources.
+								curatorChat works like a knowledgeable curator who has memorized every item in your collection. 
+								When visitors ask questions, it instantly finds the perfect resources and explains them in a 
+								way that makes sense.
 							</p>
 							
 							<div className="space-y-6">
@@ -727,12 +737,11 @@ function RAGCaseStudiesSection() {
 									</div>
 									<div>
 										<h4 className="font-medium text-[#254E70] mb-1">
-											Knowledge Processing
+											Collection Understanding (Knowledge Processing)
 										</h4>
 										<p className="text-[#254E70]/70 text-sm">
-											We convert your catalogs, research papers, educational materials, and 
-											archival documents into a structured knowledge base optimized for 
-											retrieval.
+											We help organize and understand your entire collection—from exhibit labels to archival 
+											documents—creating a comprehensive digital memory of your institution.
 										</p>
 									</div>
 								</div>
@@ -745,11 +754,12 @@ function RAGCaseStudiesSection() {
 									</div>
 									<div>
 										<h4 className="font-medium text-[#254E70] mb-1">
-											Semantic Understanding
+											Conversation Intelligence (Semantic Understanding)
 										</h4>
 										<p className="text-[#254E70]/70 text-sm">
-											Our system understands visitor queries in natural language, identifying 
-											intent and contextual needs beyond simple keywords.
+											Just like an experienced docent understands what visitors really want to know, our system 
+											interprets questions naturally. When someone asks 'What art came before impressionism?' 
+											it knows they want to understand artistic movements, not just keywords.
 										</p>
 									</div>
 								</div>
@@ -762,12 +772,11 @@ function RAGCaseStudiesSection() {
 									</div>
 									<div>
 										<h4 className="font-medium text-[#254E70] mb-1">
-											Contextual Retrieval
+											Smart Resource Finding (Contextual Retrieval)
 										</h4>
 										<p className="text-[#254E70]/70 text-sm">
-											The system retrieves the most relevant information from your knowledge 
-											base, using advanced algorithms to match visitor needs with precise 
-											information.
+											The system searches through your materials like a researcher who knows exactly where to 
+											look. It connects related items across your collection to provide complete answers.
 										</p>
 									</div>
 								</div>
@@ -780,12 +789,12 @@ function RAGCaseStudiesSection() {
 									</div>
 									<div>
 										<h4 className="font-medium text-[#254E70] mb-1">
-											Human-Like Response Generation
+											Human-Like Response Generation (Natural Language Generation)
 										</h4>
 										<p className="text-[#254E70]/70 text-sm">
-											Combining retrieved information with sophisticated language generation, 
-											the system creates coherent, helpful responses that maintain your 
-											institution's voice.
+											We craft responses that sound like they're coming from your staff—knowledgeable, 
+											friendly, and aligned with your institution's voice. Every answer maintains 
+											academic integrity while being accessible.
 										</p>
 									</div>
 								</div>
@@ -959,17 +968,6 @@ function RAGCaseStudiesSection() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 function RAGAboutSection() {
 	return (
 		<section className="bg-[#F2EEE4] py-20 relative overflow-hidden">
@@ -990,8 +988,6 @@ function RAGAboutSection() {
 
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-
 
 
 					{/* RAG Explanation Visual */}
@@ -1066,35 +1062,33 @@ function RAGAboutSection() {
 					</div>
 
 
-
-					
 					{/* Text content */}
 					<div className="order-1 lg:order-2">
 						<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
-							ABOUT RAG TECHNOLOGY
+							HOW IT WORKS (RAG System at a Glance)
 						</h4>
 						<h2 className="font-serif text-4xl md:text-5xl text-[#254E70] mb-6">
-							Intelligent Knowledge Retrieval
+							Your Collection, Conversational
 						</h2>
 						
 						<div className="space-y-6 text-[#254E70]/80">
 							<p>
-								Retrieval Augmented Generation (RAG) represents a breakthrough in how institutions 
-								connect audiences with their knowledge bases. By combining advanced information 
-								retrieval with natural language generation, RAG delivers contextually relevant, 
-								accurate information tailored to each query.
+								curatorChat works like having your most knowledgeable curator available 24/7. 
+								When visitors ask questions, the system searches through your entire collection 
+								- from exhibit catalogs to archival documents - finding exactly what they need 
+								and explaining it in a way they'll understand.
 							</p>
 							
 							<p>
-								Unlike traditional search systems that match keywords, RAG understands the semantic 
-								intent behind questions, retrieving the most relevant information from your 
-								collection and synthesizing human-like responses that maintain your institution's 
-								unique voice and expertise.
+								Instead of rigid search terms, visitors can ask natural questions like "What 
+								happened to local architecture after the 1906 earthquake?" The system understands 
+								what they're really asking for and pulls relevant information from across 
+								your collection to create helpful, detailed answers.
 							</p>
 							
 							<div className="py-4 border-t border-b border-[#254E70]/10 my-8">
 								<h3 className="font-serif text-xl text-[#254E70] mb-4">
-									How RAG Benefits Cultural Institutions
+									Four Ways Conversational Collections Change Everything
 								</h3>
 								
 								<div className="space-y-4">
@@ -1106,8 +1100,10 @@ function RAGAboutSection() {
 										</div>
 										<p className="text-[#254E70]/80">
 											<span className="text-[#254E70] font-medium"
-											>Enhanced Accessibility</span> — Visitors of all knowledge levels can engage deeply 
-											with complex collections through natural conversation
+											>Make Your Entire Collection Discoverable </span> 
+											— Visitors can now explore your vast archives through simple conversation. A 10-year-old 
+											asking about dinosaurs gets answers tailored for them, while a PhD researcher gets 
+											scholarly depth from the same system.
 										</p>
 									</div>
 									
@@ -1119,8 +1115,10 @@ function RAGAboutSection() {
 										</div>
 										<p className="text-[#254E70]/80">
 											<span className="text-[#254E70] font-medium"
-											>Staff Amplification</span> — Reduce repetitive inquiries while empowering staff to 
-											focus on specialized curation and visitor engagement
+											>Give Your Staff Their Time Back </span> 
+											— Free your experts from answering 'Where is the gift shop?' and 'When was this built?' so 
+											they can focus on creating exhibitions, conducting research, and having meaningful 
+											conversations with visitors.
 										</p>
 									</div>
 									
@@ -1145,21 +1143,23 @@ function RAGAboutSection() {
 										</div>
 										<p className="text-[#254E70]/80">
 											<span className="text-[#254E70] font-medium"
-											>Digital Transformation</span> — Meet rising visitor expectations for intelligent, instant 
-											information access
+											>Unlock Hidden Collections </span> 
+											— Those dusty archives and forgotten documents now become instantly searchable treasures. 
+											Your institutional memory becomes accessible to everyone, not just the staff who 
+											remembers where things are stored.
 										</p>
 									</div>
 								</div>
 							</div>
 							
 							<h3 className="font-serif text-xl text-[#254E70] mb-4">
-								The CuratorAI Difference
+								Built Specifically for Museums
 							</h3>
 							<p>
-								CuratorAI's approach to RAG is specifically designed for cultural institutions. 
-								Our team combines expertise in museum informatics, artificial intelligence, and 
-								user experience to create systems that respect the nuance and depth of cultural 
-								knowledge while making it accessible to diverse audiences.
+								We understand museums aren't just storage spaces for artifacts—they're living centers of 
+								culture and education. Our team combines deep museum experience with technology expertise 
+								to create systems that preserve your institution's voice while making your collection
+								 accessible to everyone who walks through your doors.
 							</p>
 							
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -1171,12 +1171,13 @@ function RAGAboutSection() {
 											</svg>
 										</div>
 										<h4 className="font-serif text-lg text-[#254E70] ml-3">
-											Domain Expertise
+											Speaks Your Language
 										</h4>
 									</div>
 									<p className="text-[#254E70]/70 text-sm">
-										Our systems understand specialized terminology, historical contexts, and the specific 
-										needs of cultural institutions, ensuring accurate retrieval across diverse collections.
+										Understands museum terminology, from 'provenance' to 'conservation.' Whether visitors ask about 
+										Baroque architecture or Edo period ceramics, the system finds exactly what you have and explains 
+										it appropriately.
 									</p>
 								</div>
 								
@@ -1188,13 +1189,12 @@ function RAGAboutSection() {
 											</svg>
 										</div>
 										<h4 className="font-serif text-lg text-[#254E70] ml-3">
-											Ethical Implementation
+											Protects Your Standards
 										</h4>
 									</div>
 									<p className="text-[#254E70]/70 text-sm">
-										Our RAG systems are designed with attribution, accuracy, and cultural sensitivity 
-										at their core, creating trustworthy interactions that represent your 
-										institution's values.
+										Every answer cites original sources and maintains academic integrity. Your institutional values 
+										and scholarly standards remain intact while reaching a broader audience.
 									</p>
 								</div>
 								
@@ -1206,13 +1206,12 @@ function RAGAboutSection() {
 											</svg>
 										</div>
 										<h4 className="font-serif text-lg text-[#254E70] ml-3">
-											Contextual Understanding
+											Adapts to Every Visitor
 										</h4>
 									</div>
 									<p className="text-[#254E70]/70 text-sm">
-										Advanced semantic models ensure your visitors receive information that's not 
-										just accurate but contextually appropriate to their level of interest and 
-										knowledge.
+										Provides elementary school-level explanations for children, scholarly depth for researchers, and 
+										everything in between. One conversation system, tailored for each visitor's needs.
 									</p>
 								</div>
 								
@@ -1224,17 +1223,20 @@ function RAGAboutSection() {
 											</svg>
 										</div>
 										<h4 className="font-serif text-lg text-[#254E70] ml-3">
-											Continuous Improvement
+											Learns What Works
 										</h4>
 									</div>
 									<p className="text-[#254E70]/70 text-sm">
-										Our systems learn from interactions, becoming more refined and accurate over time 
-										while providing valuable insights into visitor interests and engagement patterns.
+										Shows you which exhibits visitors ask about most, what information they need, and how to 
+										improve engagement. It's like having a visitor survey running 24/7, helping you understand 
+										your audience better.
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+
+
 				</div>
 				
 
@@ -1333,11 +1335,12 @@ function RAGAboutSection() {
 					
 					<div className="relative z-10 max-w-3xl mx-auto text-center">
 						<h3 className="font-serif text-2xl mb-4">
-							Ready to transform how visitors experience your collection?
+							Interested in giving visitors instant access to your full collection?
 						</h3>
 						<p className="text-white/80 mb-8">
-							Discover how CuratorAI's RAG technology can unlock the full potential of your institution's 
-							knowledge and create more meaningful connections with your audience.
+							See how curatorChat helps museums answer 3x more visitor questions daily while reducing staff 
+							workload by 40%. Your archives and expertise become accessible to everyone through simple 
+							conversation.
 						</p>
 						<div className="flex flex-col sm:flex-row justify-center gap-4">
 							<Link 
@@ -1362,6 +1365,10 @@ function RAGAboutSection() {
 						</div>
 					</div>
 				</div>
+
+
+
+
 			</div>
 		</section>
 	);
