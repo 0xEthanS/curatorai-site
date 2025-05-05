@@ -49,18 +49,12 @@ export const oswald = Oswald({
 
 
 
-  export const metadata: Metadata = {
+export const metadata: Metadata = {
 	title: "CuratorAI",
 	description: "Next Generation Tools",
 	metadataBase: new URL("https://curatorai.dev"),
 	icons: {
-		icon: [
-			{ url: '/favicon.ico', sizes: 'any' },
-			{ url: '/logo.svg', type: 'image/svg+xml' },
-		],
-		apple: [
-			{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
-		],
+	  	icon: 'logo.svg',
 	},
 	openGraph: {
 		title: "CuratorAI",
@@ -69,22 +63,15 @@ export const oswald = Oswald({
 		siteName: "CuratorAI",
 		images: [
 			{
-				url: "/og-image.png", // Create a 1200×630 PNG image for optimal display
-				width: 1200,
-				height: 630,
+				url: "/logo.svg", // Using your existing logo.svg file
+				width: 300,       // Set appropriate dimensions
+				height: 300,
 				alt: "CuratorAI",
 			},
 		],
-		locale: "en_US",
 		type: "website",
 	},
-	twitter: {
-		card: "summary_large_image",
-		title: "CuratorAI",
-		description: "Next Generation Tools",
-		images: ["/og-image.png"],
-	},
-};
+}
 
 
 
