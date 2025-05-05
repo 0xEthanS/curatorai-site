@@ -28,19 +28,28 @@ export default function Header() {
 		<header className="bg-[#F2EEE4] text-[#254E70] border-b border-[#254E70]/10 relative z-40">
 			<div className="container mx-auto px-6 py-4">
 				<div className="flex items-center justify-between">
+
+
+
+
 					{/* Logo */}
 					<Link href="/" className="flex items-center space-x-2 z-10">
+
+					
 						<div className="w-8 h-8 rounded-sm bg-[#D97C4E] flex items-center justify-center overflow-hidden relative">
 							<div className="absolute inset-0 bg-gradient-to-br from-[#D97C4E] to-[#946B4A]"></div>
 							<span className="relative text-white font-serif text-lg">c</span>
 						</div>
+
+
 						<div className="font-serif text-xl leading-none tracking-tight">
 							<span className="font-semibold">curator</span>
 							<span className="font-light">AI</span>
 						</div>
+
+
 					</Link>
 					
-
 
 
 
@@ -63,7 +72,6 @@ export default function Header() {
 
 
 
-					
 					{/* CTA Button */}
 					<div className="hidden md:block">
 						<Link 
@@ -77,6 +85,9 @@ export default function Header() {
 						</Link>
 					</div>
 					
+
+
+
 					{/* Mobile Menu Button */}
 					<div className="flex md:hidden z-10">
 						<button 
@@ -96,8 +107,15 @@ export default function Header() {
 							)}
 						</button>
 					</div>
+
+
+
+
 				</div>
 				
+
+
+
 				{/* Mobile menu overlay (shown/hidden based on state) */}
 				<div 
 					className={`fixed inset-0 bg-[#254E70]/95 backdrop-blur-sm transition-all duration-300 md:hidden z-0 ${
@@ -106,6 +124,9 @@ export default function Header() {
 					onClick={toggleMenu}
 				></div>
 				
+
+
+
 				{/* Mobile menu content */}
 				<div 
 					className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-[#F2EEE4] shadow-xl p-6 transform transition-transform duration-300 ease-in-out md:hidden ${
@@ -186,10 +207,21 @@ export default function Header() {
 
 
 				</div>
+
+
+
+
 			</div>
 			
+
+
+
 			{/* Subtle decorative element */}
 			<div className="hidden lg:block absolute top-0 right-0 w-64 h-1 bg-gradient-to-r from-transparent via-[#D97C4E]/50 to-transparent"></div>
+
+
+
+
 		</header>
 	);
 }
