@@ -221,6 +221,10 @@ export default function Overview() {
 							{/* Content area */}
 							<div className="p-8">
 								<div className="mb-6">
+
+
+
+									
 									<div className="relative aspect-video rounded-sm overflow-hidden bg-[#254E70]/5 border border-[#D97C4E]/10 mb-6">
 										{/* Visual representation of Headless WordPress */}
 										<div className="absolute inset-0 flex items-center">
@@ -273,7 +277,10 @@ export default function Overview() {
 											</div>
 										</div>
 									</div>
-									
+
+
+
+
 									<p className="text-[#254E70]/80 mb-6">
 										Give your visitors a faster museum website experience without changing how your staff 
 										updates content. Your team keeps using the familiar WordPress system they already 

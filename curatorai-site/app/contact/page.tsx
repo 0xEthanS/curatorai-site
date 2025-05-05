@@ -52,26 +52,40 @@ export default function Page() {
 			{/* Main Contact Section */}
 			<section className="py-20 relative overflow-hidden">
 				<div className="container mx-auto px-6">
+
+
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
 
 
 
 						{/* Contact Information */}
-						<div className="lg:col-span-4">
+						<div className="
+								lg:col-span-4
+								order-2
+								lg:order-1
+							"
+						>
+
+
 							<div className="sticky top-8">
+
+
 								<h2 className="font-serif text-3xl text-[#254E70] mb-6">
 									Contact Information
 								</h2>
+
+
 								<p className="text-[#254E70]/80 mb-8">
 									Reach out through any of the channels below, and our team 
 									will get back to you within one business day.
 								</p>
 								
 
-
-
+						 		{/* Contact Info */}
 								<div className="space-y-6 mb-8">
+
+
 									<div className="flex items-start">
 										<div className="w-12 h-12 rounded-sm bg-[#D97C4E]/10 flex-shrink-0 flex items-center justify-center mr-4">
 											<svg className="w-6 h-6 text-[#D97C4E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,6 +107,7 @@ export default function Page() {
 										</div>
 									</div>
 									
+
 									<div className="flex items-start">
 										<div className="w-12 h-12 rounded-sm bg-[#48A9A6]/10 flex-shrink-0 flex items-center justify-center mr-4">
 											<svg className="w-6 h-6 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -139,8 +154,6 @@ export default function Page() {
 									*/}
 								</div>
 								
-
-
 
 								{/* Socials */}
 								<div className="border-t border-[#254E70]/10 pt-8 mb-8">
@@ -189,10 +202,8 @@ export default function Page() {
 
 								</div>
 								
-
-
-
 								
+								{/* Newsletter */}
 								<div className="bg-white rounded-sm p-6 shadow-sm border border-[#254E70]/10">
 									<h3 className="font-serif text-xl text-[#254E70] mb-4">
 										Subscribe to Our Newsletter
@@ -211,6 +222,8 @@ export default function Page() {
 
 
 								</div>
+
+
 							</div>
 						</div>
 						
@@ -218,7 +231,14 @@ export default function Page() {
 
 
 						{/* Contact Form */}
-						<div className="lg:col-span-8">
+						<div className="
+								lg:col-span-8
+								order-1
+								lg:order-2
+							"
+						>
+
+
 							<div className="bg-white rounded-sm shadow-md border border-[#254E70]/10 overflow-hidden">
 
 
@@ -280,6 +300,10 @@ export default function Page() {
 
 
 						</div>
+
+
+
+
 					</div>
 				</div>
 			</section>

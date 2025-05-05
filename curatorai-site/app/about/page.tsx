@@ -687,15 +687,34 @@ export default function Page() {
 				{/* Main Content - Ensure it's above the background */}
 				<div className="container mx-auto px-6 relative z-10"> {/* Add relative and z-10 */}
 					<div className="max-w-6xl mx-auto">
-						<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+
+						<div className='pb-16'>
+							<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
+								GET IN TOUCH
+							</h4>
+
+							<h2 className="font-serif text-4xl text-[#254E70] mb-6">
+								Connect With Us
+							</h2>
+						</div>
 
 
 
 
-							<div>
-								<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">GET IN TOUCH</h4>
-								<h2 className="font-serif text-4xl text-[#254E70] mb-6">Connect With Us</h2>
+						<div className="
+								grid 
+								grid-cols-1 
+								lg:grid-cols-2 
+								gap-16
+							"
+						>
 
+
+							<div className='
+									order-2 lg:order-1
+								'
+							>
 								<div className="space-y-6 text-[#254E70]/80">
 									<p>
 										We'd love to learn about your institution and discuss how we can help
@@ -801,28 +820,25 @@ export default function Page() {
 							</div>
 
 
+							<div className="bg-[#F2EEE4] rounded-sm p-8 shadow-sm border border-[#254E70]/10
+									order-1 lg:order-2
+								"
+							>
 
-
-
-							<div className="bg-[#F2EEE4] rounded-sm p-8 shadow-sm border border-[#254E70]/10">
 								<h3 className="font-serif text-2xl text-[#254E70] mb-6">
 									Send Us a Message
 								</h3>
 
-
-
-
 								<SmallForm />
-
-
-
 
 							</div>
 
 
-
-
 						</div>
+
+
+
+
 					</div>
 				</div>
 			</section>

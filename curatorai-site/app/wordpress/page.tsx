@@ -1019,8 +1019,8 @@ function HeadlessWordPressAboutSection() {
 									</svg>
 								</div>
 								
-								{/* Annotations */}
-								<div className="absolute -left-4 top-1/4 transform -translate-y-1/2 w-32 text-right">
+								{/* Responsive Annotations - Desktop/tablet annotations */}
+								<div className="hidden md:block absolute -left-4 top-1/4 transform -translate-y-1/2 w-32 text-right">
 									<div className="text-[#254E70]/70 text-xs">
 										Content management bound to presentation
 									</div>
@@ -1030,7 +1030,7 @@ function HeadlessWordPressAboutSection() {
 									</svg>
 								</div>
 								
-								<div className="absolute -right-4 top-3/4 transform -translate-y-1/2 w-32">
+								<div className="hidden md:block absolute -right-4 top-3/4 transform -translate-y-1/2 w-32">
 									<svg className="absolute top-1/2 left-0 transform -translate-x-2 -translate-y-1/2 w-4 h-8" fill="none" viewBox="0 0 16 40">
 										<path d="M0 0L8 8L16 0" stroke="#254E70" strokeOpacity="0.3" strokeWidth="1" />
 										<path d="M8 8V40" stroke="#254E70" strokeOpacity="0.3" strokeWidth="1" />
@@ -1039,14 +1039,27 @@ function HeadlessWordPressAboutSection() {
 										Limited flexibility for frontend innovation
 									</div>
 								</div>
+								
+								{/* Mobile annotations inside the box */}
+								<div className="md:hidden absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+									<div className="text-[#254E70]/80 text-[10px] leading-tight text-center font-medium max-w-[120px] px-1 py-0.5 bg-white/80 rounded-sm">
+										Content management bound to presentation
+									</div>
+								</div>
+								
+								<div className="md:hidden absolute bottom-1/3 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+									<div className="text-[#254E70]/80 text-[10px] leading-tight text-center font-medium max-w-[120px] px-1 py-0.5 bg-white/80 rounded-sm">
+										Limited frontend flexibility
+									</div>
+								</div>
 							</div>
 							
 							{/* Loading speed indicator */}
-							<div className="mt-2 flex items-center justify-center">
+							<div className="mt-4 flex items-center justify-center">
 								<div className="text-xs text-[#254E70]/60 mr-2">
 									Page Load:
 								</div>
-								<div className="h-2 w-48 bg-[#254E70]/10 rounded-full overflow-hidden">
+								<div className="h-2 w-36 md:w-48 bg-[#254E70]/10 rounded-full overflow-hidden">
 									<div className="h-full w-1/3 bg-[#254E70]/40"></div>
 								</div>
 								<div className="text-xs text-[#254E70]/60 ml-2">
@@ -1129,8 +1142,8 @@ function HeadlessWordPressAboutSection() {
 									</svg>
 								</div>
 								
-								{/* Annotations */}
-								<div className="absolute -left-4 top-1/4 transform -translate-y-1/2 w-36 text-right">
+								{/* Desktop/tablet annotations */}
+								<div className="hidden md:block absolute -left-4 top-1/4 transform -translate-y-1/2 w-36 text-right">
 									<div className="text-[#48A9A6] text-xs font-medium">
 										Familiar WordPress admin
 									</div>
@@ -1140,7 +1153,7 @@ function HeadlessWordPressAboutSection() {
 									</svg>
 								</div>
 								
-								<div className="absolute -right-4 top-1/4 transform -translate-y-1/2 w-36">
+								<div className="hidden md:block absolute -right-4 top-1/4 transform -translate-y-1/2 w-36">
 									<svg className="absolute top-1/2 left-0 transform -translate-x-2 -translate-y-1/2 w-4 h-8" fill="none" viewBox="0 0 16 40">
 										<path d="M0 0L8 8L16 0" stroke="#D97C4E" strokeOpacity="0.5" strokeWidth="1" />
 										<path d="M8 8V40" stroke="#D97C4E" strokeOpacity="0.5" strokeWidth="1" />
@@ -1149,14 +1162,27 @@ function HeadlessWordPressAboutSection() {
 										Modern frontend technologies
 									</div>
 								</div>
+								
+								{/* Mobile annotations - small text inside each box */}
+								<div className="md:hidden absolute top-1/3 left-[22.5%] transform -translate-x-1/2 -translate-y-1/2">
+									<div className="text-[#48A9A6] text-[10px] leading-tight text-center font-medium max-w-[90px] px-1 py-0.5 bg-white/80 rounded-sm">
+										Familiar admin
+									</div>
+								</div>
+								
+								<div className="md:hidden absolute top-1/3 right-[22.5%] transform translate-x-1/2 -translate-y-1/2">
+									<div className="text-[#D97C4E] text-[10px] leading-tight text-center font-medium max-w-[90px] px-1 py-0.5 bg-white/80 rounded-sm">
+										Modern frontend
+									</div>
+								</div>
 							</div>
 							
 							{/* Loading speed indicator */}
-							<div className="mt-2 flex items-center justify-center">
+							<div className="mt-4 flex items-center justify-center">
 								<div className="text-xs text-[#254E70]/60 mr-2">
 									Page Load:
 								</div>
-								<div className="h-2 w-48 bg-[#254E70]/10 rounded-full overflow-hidden">
+								<div className="h-2 w-36 md:w-48 bg-[#254E70]/10 rounded-full overflow-hidden">
 									<div className="h-full w-4/5 bg-[#D97C4E]"></div>
 								</div>
 								<div className="text-xs text-[#254E70]/60 ml-2">
@@ -1363,6 +1389,8 @@ function HeadlessWordPressAboutSection() {
 								{/* Connector */}
 								<div className="hidden md:block absolute top-6 right-0 w-full h-px bg-[#254E70]/10"></div>
 							</div>
+
+
 
 							
 							<div className="relative">
