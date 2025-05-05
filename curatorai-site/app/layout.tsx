@@ -63,9 +63,9 @@ export const metadata: Metadata = {
 		siteName: "CuratorAI",
 		images: [
 			{
-				url: "/logo.svg", // Using your existing logo.svg file
-				width: 300,       // Set appropriate dimensions
-				height: 300,
+				url: "/logo.png", // Using your existing logo.svg file
+				width: 800,       // Set appropriate dimensions
+				height: 600,
 				alt: "CuratorAI",
 			},
 		],
