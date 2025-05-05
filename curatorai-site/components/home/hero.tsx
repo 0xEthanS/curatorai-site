@@ -38,13 +38,14 @@ export default function Hero() {
 									</span>
 								</h1>
 								<p className="mt-3 text-lg md:text-xl font-light text-[#946B4A]">
-									Bringing Collections to Digital Life
+									Make Your Entire Collection Searchable Through Conversation
 								</p>
 							</div>
 							
 							<p className="text-lg max-w-lg leading-relaxed">
-								Transform how visitors experience your collections with elegant digital tools 
-								designed specifically for cultural institutions.
+								Turn your archives and exhibits into searchable conversations. Visitors get instant 
+								answers to any question about your collection, while your staff saves hours answering 
+								repetitive questions.
 							</p>
 							
 							<div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -270,34 +271,51 @@ export default function Hero() {
 	
 					{/* Features section */}
 					<div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
 						<div className="p-6 border border-[#254E70]/10 rounded-sm bg-white/30 backdrop-blur-sm">
 							<div className="w-10 h-10 rounded-sm bg-[#48A9A6]/10 flex items-center justify-center mb-4">
 								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M21 8V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V16M21 12H9M17 8L13 12L17 16" stroke="#48A9A6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 								</svg>
 							</div>
-							<h3 className="font-serif text-xl mb-2">
-								RAG Implementation
+							<h3 className="font-serif text-xl text-[#254E70] mb-1">
+								curatorChat
 							</h3>
+							<div className="font-mono text-xs text-[#48A9A6] uppercase tracking-wider mb-3">
+								Collection Conversation System
+							</div>
 							<p className="text-[#254E70]/80">
-								Advanced retrieval for museum collections, making knowledge searchable, discoverable, 
-								and accessible.
+								Turn your entire collection into a conversation. Visitors ask questions in plain language 
+								and get accurate, source-cited answers from your archives and exhibits.
 							</p>
+							<div className="mt-3 text-sm text-[#254E70]/70 font-medium">
+								Free up staff time while making archives accessible to everyone.
+							</div>
 						</div>
-						
+
+
 						<div className="p-6 border border-[#254E70]/10 rounded-sm bg-white/30 backdrop-blur-sm">
 							<div className="w-10 h-10 rounded-sm bg-[#D97C4E]/10 flex items-center justify-center mb-4">
 								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#D97C4E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 								</svg>
 							</div>
-							<h3 className="font-serif text-xl mb-2">
-								Headless WordPress
+							<h3 className="font-serif text-xl text-[#254E70] mb-1">
+								Fast, Modern Websites
 							</h3>
+							<div className="font-mono text-xs text-[#D97C4E] uppercase tracking-wider mb-3">
+								Headless WordPress
+							</div>
 							<p className="text-[#254E70]/80">
-								Lightning-fast websites with improved UX, all while maintaining familiar content management.
+								Websites that load instantly on any device. Your staff keeps using the same WordPress 
+								dashboard while visitors enjoy a faster, smoother experience.
 							</p>
+							<div className="mt-3 text-sm text-[#254E70]/70 font-medium">
+								Showcase high-resolution images without frustrating load times.
+							</div>
 						</div>
+
 						
 						<div className="p-6 border border-[#254E70]/10 rounded-sm bg-white/30 backdrop-blur-sm">
 							<div className="w-10 h-10 rounded-sm bg-[#254E70]/10 flex items-center justify-center mb-4">
@@ -305,14 +323,23 @@ export default function Hero() {
 									<path d="M9 3H5C3.89543 3 3 3.89543 3 5V9M9 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9M9 3L3 9M8 17H16M12 13V21" stroke="#254E70" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 								</svg>
 							</div>
-							<h3 className="font-serif text-xl mb-2">
-								AI Integration
+							<h3 className="font-serif text-xl text-[#254E70] mb-1">
+								Smart Visitor Assistance
 							</h3>
+							<div className="font-mono text-xs text-[#254E70] uppercase tracking-wider mb-3">
+								AI Integration
+							</div>
 							<p className="text-[#254E70]/80">
-								Seamless incorporation of AI tools that enhance visitor engagement without compromising authenticity.
+								Digital docents that answer questions, guide exploration, and personalize experiences 
+								- all while maintaining your institution's voice and scholarly standards.
 							</p>
+							<div className="mt-3 text-sm text-[#254E70]/70 font-medium">
+								Help visitors with disabilities and specific interests find exactly what they need.
+							</div>
 						</div>
-					</div>
+
+
+					</div>	
 
 
 

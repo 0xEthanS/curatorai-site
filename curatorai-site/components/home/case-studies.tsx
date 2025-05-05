@@ -25,15 +25,15 @@ export default function CaseStudies() {
 
 
 				<div className="max-w-3xl mx-auto text-center mb-16">
-					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
-						SUCCESS STORIES
+					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3 uppercase">
+						MUSEUM SUCCESS STORIES
 					</h4>
 					<h2 className="font-serif text-4xl md:text-5xl text-[#254E70] mb-6">
-						Transformations in Action	
+						Real Results from Museums Like Yours
 					</h2>
 					<p className="text-[#254E70]/80">
-						See how cultural institutions are using headless wordpress and RAG Solutions to 
-						enhance accessibility, engage audiences, and preserve their unique heritage.
+						Discover how museums are connecting visitors with their collections, building faster 
+						websites, and freeing staff to focus on what matters most.
 					</p>
 				</div>
 				
@@ -70,7 +70,7 @@ export default function CaseStudies() {
 							<div className="lg:col-span-7 p-8 lg:p-12 flex flex-col justify-center">
 								<div className="flex space-x-3 mb-4">
 									<span className="px-3 py-1 bg-[#D97C4E]/10 text-[#D97C4E] text-xs font-mono rounded-sm">
-										RAG IMPLEMENTATION
+										VISITOR ENGAGEMENT
 									</span>
 									<span className="px-3 py-1 bg-[#48A9A6]/10 text-[#48A9A6] text-xs font-mono rounded-sm">
 										FEATURED
@@ -78,13 +78,15 @@ export default function CaseStudies() {
 								</div>
 								
 								<h3 className="font-serif text-2xl text-[#254E70] mb-4">
-									Making 200,000 Artifacts Accessible Through Conversation
+									From Hidden Archives to Public Conversations: How One Museum Made 200,000 Artifacts 
+									Discoverable
 								</h3>
 								
 								<p className="text-[#254E70]/80 mb-6">
-									The Metropolitan Art Museum needed to make their vast collection more 
-									accessible to both casual visitors and serious researchers. With a RAG 
-									implementation, they transformed how people discover and engage with art.
+									The Metropolitan Art Museum faced a common challenge: less than 5% of their collection 
+									was on physical display, while thousands of artifacts remained hidden in storage. Their 
+									digital guide system now helps visitors discover art they love through simple 
+									conversation, while researchers gain deeper access to the museum's complete holdings.
 								</p>
 								
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -146,6 +148,10 @@ export default function CaseStudies() {
 
 				{/* Additional Case Studies Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+
+
 					{/* Case Study 1 */}
 					<div className="bg-white rounded-sm shadow-md border border-[#254E70]/10 overflow-hidden group hover:shadow-lg transition-shadow duration-300">
 						<div className="aspect-video relative overflow-hidden bg-[#254E70]/5">
@@ -160,7 +166,7 @@ export default function CaseStudies() {
 							
 							<div className="absolute top-4 left-4">
 								<span className="px-3 py-1 bg-[#48A9A6]/80 text-white text-xs font-mono rounded-sm">
-									HEADLESS WORDPRESS
+									FASTER RESEARCH EXPERIENCE
 								</span>
 							</div>
 						</div>
@@ -206,6 +212,9 @@ export default function CaseStudies() {
 
 						</div>
 					</div>
+
+
+
 					
 					{/* Case Study 2 */}
 					<div className="bg-white rounded-sm shadow-md border border-[#254E70]/10 overflow-hidden group hover:shadow-lg transition-shadow duration-300">
@@ -221,7 +230,7 @@ export default function CaseStudies() {
 							
 							<div className="absolute top-4 left-4">
 								<span className="px-3 py-1 bg-[#946B4A]/80 text-white text-xs font-mono rounded-sm">
-									RAG IMPLEMENTATION
+									VISITOR ENGAGEMENT
 								</span>
 							</div>
 						</div>
@@ -267,6 +276,9 @@ export default function CaseStudies() {
 
 						</div>
 					</div>
+
+
+
 					
 					{/* Case Study 3 */}
 					<div className="bg-white rounded-sm shadow-md border border-[#254E70]/10 overflow-hidden group hover:shadow-lg transition-shadow duration-300">
@@ -282,7 +294,7 @@ export default function CaseStudies() {
 							
 							<div className="absolute top-4 left-4">
 								<span className="px-3 py-1 bg-[#D97C4E]/80 text-white text-xs font-mono rounded-sm">
-									INTEGRATED SOLUTION
+									INCLUSIVE DESIGN
 								</span>
 							</div>
 						</div>
@@ -293,7 +305,7 @@ export default function CaseStudies() {
 							</h3>
 							
 							<p className="text-[#254E70]/80 mb-6 line-clamp-3">
-								Combining headless WordPress with RAG technology to create an 
+								Combining headless WordPress with a Digital Guide to create an 
 								inclusive, accessible experience for visitors of all abilities.
 							</p>
 							
@@ -328,6 +340,10 @@ export default function CaseStudies() {
 							
 						</div>
 					</div>
+
+
+
+
 				</div>
 				
 
@@ -401,19 +417,19 @@ export default function CaseStudies() {
 
 
 
-				{/* CTA 
+				{/* CTA */}
 				<div className="mt-24 text-center">
 					<Link 
-						href="/case-studies" 
+						href="/contact" 
 						className="px-8 py-3 bg-[#254E70] text-white rounded-sm hover:bg-[#254E70]/90 transition-colors font-medium inline-flex items-center mx-auto"
 					>
-						View All Case Studies
+						Contact Us
 						<svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
 						</svg>
 					</Link>
 				</div>
-				*/}
+				
 
 
 

@@ -10,11 +10,8 @@ import CaseStudies from "@/components/home/case-studies";
 export default function Home() {
 	return (
 		<div>
-
 			<Hero />
-
 			<Overview />
-
 			<CaseStudies />
 
 			{/*<Pricing />*/}

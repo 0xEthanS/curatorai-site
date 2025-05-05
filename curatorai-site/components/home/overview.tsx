@@ -25,14 +25,15 @@ export default function Overview() {
 
 				<div className="max-w-3xl mx-auto text-center mb-16">
 					<h4 className="font-mono text-[#48A9A6] text-sm tracking-wider mb-3">
-						OUR SERVICES
+						MUSEUM SOLUTIONS
 					</h4>
 					<h2 className="font-serif text-4xl text-[#254E70] mb-6">
-						Transformative Solutions for Cultural Institutions
+						Digital Tools That Visitors Love & Staff Can Actually Use
 					</h2>
 					<p className="text-[#254E70]/80">
-						We empower museums and cultural institutions with technology that enhances accessibility, 
-						engagement, and the preservation of cultural heritage.
+						We help museums connect visitors with their collections through conversation, faster 
+						websites, and intelligent tools—all designed to save staff time while making your 
+						knowledge more accessible to everyone.
 					</p>
 				</div>
 
@@ -40,6 +41,10 @@ export default function Overview() {
 
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16">
+
+
+
+
 					{/* RAG Implementation Service */}
 					<div className="relative group">
 						<div className="absolute inset-0 rounded-sm bg-gradient-to-r from-[#48A9A6]/50 to-[#48A9A6]/5 blur-xl opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
@@ -53,7 +58,7 @@ export default function Overview() {
 										</svg>
 									</div>
 									<h3 className="font-serif text-xl text-[#254E70] ml-3">
-										RAG Implementation
+										curatorChat
 									</h3>
 								</div>
 							</div>
@@ -116,12 +121,14 @@ export default function Overview() {
 									</div>
 									
 									<p className="text-[#254E70]/80 mb-6">
-										Retrieval Augmented Generation (RAG) connects your visitors with your institution's knowledge 
-										through intelligent AI technology. Our implementation makes collections searchable, engaging, 
-										and accessible through natural language.
+										Turn your entire collection into a searchable conversation. Our Digital Guide system 
+										lets visitors ask questions in plain language and get immediate, accurate answers drawn 
+										directly from your archives, catalogs, and institutional knowledge.
 									</p>
 									
 									<div className="space-y-3 mb-8">
+
+
 										<div className="flex items-start">
 											<div className="w-6 h-6 rounded-sm bg-[#48A9A6]/10 flex-shrink-0 flex items-center justify-center mr-3 mt-1">
 												<svg className="w-4 h-4 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -130,10 +137,13 @@ export default function Overview() {
 											</div>
 											<p className="text-[#254E70]/80">
 												<span className="text-[#254E70] font-medium"
-												>Enhanced Accessibility</span> — Make your collections searchable through natural conversational queries
+												>Answer Visitor Questions Instantly </span> 
+												— Visitors can ask "What exhibits relate to the Civil War?" or "Tell me about local 
+												indigenous art" and get helpful responses using your exact collection information.
 											</p>
 										</div>
 										
+
 										<div className="flex items-start">
 											<div className="w-6 h-6 rounded-sm bg-[#48A9A6]/10 flex-shrink-0 flex items-center justify-center mr-3 mt-1">
 												<svg className="w-4 h-4 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -142,10 +152,14 @@ export default function Overview() {
 											</div>
 											<p className="text-[#254E70]/80">
 												<span className="text-[#254E70] font-medium"
-												>Knowledge Preservation</span> — Transform archives and institutional expertise into living resources
+												>Preserve Institutional Expertise </span> 
+												— When long-time staff retire, their knowledge doesn't leave with them. Capture curatorial 
+												insights and historical details in a system that answers questions just as your experts 
+												would.
 											</p>
 										</div>
 										
+
 										<div className="flex items-start">
 											<div className="w-6 h-6 rounded-sm bg-[#48A9A6]/10 flex-shrink-0 flex items-center justify-center mr-3 mt-1">
 												<svg className="w-4 h-4 text-[#48A9A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,9 +168,14 @@ export default function Overview() {
 											</div>
 											<p className="text-[#254E70]/80">
 												<span className="text-[#254E70] font-medium"
-												>Visitor Engagement</span> — Enable deeper interactions with collections through AI-powered assistance
+												>Deepen Collection Connections </span> 
+												— Help visitors discover related items they'd never find on their own. "I like this 
+												painting" becomes a journey through similar works, artistic influences, and 
+												historical context.
 											</p>
 										</div>
+
+
 									</div>
 								</div>
 								
@@ -178,6 +197,9 @@ export default function Overview() {
 						</div>
 					</div>
 					
+
+
+
 					{/* Headless WordPress Service */}
 					<div className="relative group">
 						<div className="absolute inset-0 rounded-sm bg-gradient-to-r from-[#D97C4E]/50 to-[#D97C4E]/5 blur-xl opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
@@ -253,9 +275,10 @@ export default function Overview() {
 									</div>
 									
 									<p className="text-[#254E70]/80 mb-6">
-										Our headless WordPress implementation separates your content management system from 
-										your visitor-facing website, creating a lightning-fast, flexible digital presence 
-										while maintaining the familiar WordPress editing experience.
+										Give your visitors a faster museum website experience without changing how your staff 
+										updates content. Your team keeps using the familiar WordPress system they already 
+										know, while visitors enjoy a modern, responsive website that loads instantly—even 
+										with high-resolution collection images.
 									</p>
 									
 									<div className="space-y-3 mb-8">
@@ -267,7 +290,10 @@ export default function Overview() {
 											</div>
 											<p className="text-[#254E70]/80">
 												<span className="text-[#254E70] font-medium"
-												>Lightning-Fast Performance</span> — 2-5x faster page loads with optimized static generation
+												>Instant Page Loading </span> 
+												— Visitors browsing your collection won't wait for images to appear. High-resolution 
+												photographs, exhibition details, and interactive elements load 2-5x faster, creating 
+												a smoother experience for both in-person and virtual visitors planning their trips.
 											</p>
 										</div>
 										
@@ -279,7 +305,9 @@ export default function Overview() {
 											</div>
 											<p className="text-[#254E70]/80">
 												<span className="text-[#254E70] font-medium"
-												>Familiar Content Management</span> — Your team continues using the WordPress interface they know
+												>No Retraining Needed </span> 
+												— Your communications team continues using the same WordPress tools they already know. Add 
+												exhibition updates, collection highlights, or event announcements exactly as you do now.
 											</p>
 										</div>
 										
@@ -291,7 +319,9 @@ export default function Overview() {
 											</div>
 											<p className="text-[#254E70]/80">
 												<span className="text-[#254E70] font-medium"
-												>Future-Ready Architecture</span> — Easily integrate with AI and other modern technologies
+												>Ready for Tomorrow's Needs </span> 
+												— Seamlessly add features like collection search, virtual tours, multilingual content, 
+												or chat assistance when you're ready, without rebuilding your entire site.
 											</p>
 										</div>
 									</div>
@@ -314,6 +344,10 @@ export default function Overview() {
 							</div>
 						</div>
 					</div>
+
+
+
+
 				</div>
 				
 
@@ -409,3 +443,6 @@ export default function Overview() {
 		</section>
 	);
 }
+
+
+
