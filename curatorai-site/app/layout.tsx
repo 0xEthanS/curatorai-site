@@ -44,7 +44,7 @@ export const oswald = Oswald({
 	weight: ['400', '500', '600', '700'], // Include multiple weights
 	variable: '--font-oswald',
 	display: 'swap',
-  });
+});
 
 
 

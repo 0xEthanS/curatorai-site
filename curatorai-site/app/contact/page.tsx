@@ -201,27 +201,70 @@ export default function Page() {
 
 
 								</div>
-								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 								
 								{/* Newsletter */}
 								<div className="bg-white rounded-sm p-6 shadow-sm border border-[#254E70]/10">
+									
 									<h3 className="font-serif text-xl text-[#254E70] mb-4">
 										Subscribe to Our Newsletter
 									</h3>
+
 									<p className="text-[#254E70]/70 text-sm mb-4">
 										Stay updated with the latest in cultural technology, case studies, 
 										and invitations to exclusive events.
 									</p>
 
-
-
-
 									<EmailForm />
 
-
-
-
 								</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 							</div>
