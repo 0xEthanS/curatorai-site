@@ -38,7 +38,7 @@ const bebasneue = Bebas_Neue({
 });
 
 
-export const oswald = Oswald({
+const oswald = Oswald({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700'], // Include multiple weights
 	variable: '--font-oswald',

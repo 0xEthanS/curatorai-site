@@ -1,7 +1,5 @@
 import Header from "@/components/top-level/marketing-header";
-
 import Footer from "@/components/top-level/footer";
-
 
 import Hero from "@/components/home/hero";
 import Features from "@/components/home/features";
@@ -20,32 +18,15 @@ export default function Home() {
 
 			<Header />
 
-
-
-
 			<Hero />
 
 			<Features />
-
-
-		
-
-
-		
-
-
-
 
 			<div className="md:pt-12">
 				<Pricing />
 			</div>
 
-
 			<FAQ />
-
-
-
-
 
 			<Footer />
 

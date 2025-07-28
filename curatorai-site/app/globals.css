@@ -1,13 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
-
-
 @custom-variant dark (&:is(.dark *));
-
-
-
 
 :root {
   --font-oswald: var(--font-oswald);
@@ -48,9 +42,6 @@
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067); 
 }
-
-
-
 
 @theme inline {
 
@@ -96,10 +87,6 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-
-
-
-
 .font-oswald {
   font-family: var(--font-oswald);
 }
@@ -108,15 +95,9 @@
   font-family: var(--font-libre-baskerville);
 }
 
-
-
-
 .clip-diagonal-up {
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
 }
-
-
-
 
 @keyframes fadeInUp {
   from {
@@ -128,9 +109,6 @@
     transform: translateY(0);
   }
 }
-
-
-
 
 .animate-fade-in-up {
   animation: fadeInUp 0.5s ease-out forwards;
@@ -147,9 +125,6 @@
 .animate-slow-spin {
   animation: spin 20s linear infinite;
 }
-
-
-
 
 .dark {
   --background: oklch(0.141 0.005 285.823);
@@ -185,9 +160,6 @@
   --sidebar-ring: oklch(0.552 0.016 285.938); 
 }
 
-
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50; 
@@ -210,7 +182,7 @@
     --chart-4: oklch(0.828 0.189 84.429);
     --chart-5: oklch(0.769 0.188 70.08);
   }
- 
+
   .dark {
     --sidebar: oklch(0.205 0 0);
     --sidebar-foreground: oklch(0.985 0 0);
@@ -227,6 +199,4 @@
     --chart-5: oklch(0.645 0.246 16.439);
   }
 }
-
-
 

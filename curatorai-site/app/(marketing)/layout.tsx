@@ -1,5 +1,5 @@
 import Header from "@/components/top-level/marketing-header";
-import Footer from "@/components/legacy/footer";
+import Footer from "@/components/top-level/footer";
 
 
 
