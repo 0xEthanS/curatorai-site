@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import { EmailForm } from '@/components/email-form';
-import { BigForm } from '@/components/big-form';
+import { EmailForm } from '@/components/forms/email-form';
+import { BigForm } from '@/components/forms/big-form';
 
 
 

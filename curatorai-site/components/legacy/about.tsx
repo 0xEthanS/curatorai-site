@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import SmallForm from '@/components/small-form';
+import SmallForm from '@/components/forms/small-form';
 
 
 

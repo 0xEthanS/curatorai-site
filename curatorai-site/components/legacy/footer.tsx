@@ -18,15 +18,25 @@ export default function Footer() {
 				<div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 					{/* Brand column */}
 					<div className="md:col-span-4 space-y-6">
+
+
+
+
 						<div className="flex items-center space-x-2">
+
 							<div className="w-8 h-8 rounded-sm bg-white flex items-center justify-center overflow-hidden">
 								<span className="text-[#D97C4E] font-serif text-lg">c</span>
 							</div>
+
 							<div className="font-serif text-xl leading-none tracking-tight text-white">
 								<span className="font-semibold">curator</span>
 								<span className="font-light">AI</span>
 							</div>
+							
 						</div>
+
+
+
 						
 						<p className="text-[#F2EEE4]/70 max-w-xs text-sm leading-relaxed">
 							Transform how visitors experience your collections with elegant digital 

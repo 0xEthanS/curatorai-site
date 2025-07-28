@@ -1,8 +1,14 @@
+import Header from "@/components/top-level/marketing-header";
+
+import Footer from "@/components/top-level/footer";
+
+
 import Hero from "@/components/home/hero";
-// import Pricing from "@/components/home/pricing";
-import Overview from "@/components/home/overview";
-import CaseStudies from "@/components/home/case-studies";
-// import Blog from "@/components/home/blog";
+import Features from "@/components/home/features";
+import Pricing from "@/components/pricing"
+import FAQ from "@/components/faq";
+
+
 
 
 
@@ -10,14 +16,40 @@ import CaseStudies from "@/components/home/case-studies";
 export default function Home() {
 	return (
 		<div>
+
+
+			<Header />
+
+
+
+
 			<Hero />
-			<Overview />
-			<CaseStudies />
 
-			{/*<Pricing />*/}
+			<Features />
 
-			{/*<Blog />*/}
-			
+
+		
+
+
+		
+
+
+
+
+			<div className="md:pt-12">
+				<Pricing />
+			</div>
+
+
+			<FAQ />
+
+
+
+
+
+			<Footer />
+
+
 		</div>
 	);
 }
