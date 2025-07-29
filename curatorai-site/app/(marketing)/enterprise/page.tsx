@@ -5,7 +5,7 @@
 export default function Enterprise() {
     return (
         <div>
-            Enterprise Page
+            Enterprise Page Hello
         </div>
     );
 }

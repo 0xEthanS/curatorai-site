@@ -6,6 +6,9 @@ import { HeroHeader } from '@/components/header'
 import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 
+
+
+
 export default function HeroSection() {
     return (
         <>
