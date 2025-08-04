@@ -162,7 +162,7 @@ export const LinenInTheWind = (props: any) => {
 
 	// Enhanced refs with performance tracking
 	const threeRef = useRef({
-		scene: null as THREE.Scene | null,
+		scene: null as Scene | null,
 		camera: null as THREE.PerspectiveCamera | null,
 		renderer: null as THREE.WebGLRenderer | null,
 		mainGroup: null as THREE.Group | null,
