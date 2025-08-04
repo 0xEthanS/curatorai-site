@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Header from "@/components/top-level/marketing-header"
+import Header from "@/components/top-level/marketing-header-light"
 
 import Hero from "@/components/home/hero";
 import Features from "@/components/home/features";

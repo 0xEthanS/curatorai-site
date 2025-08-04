@@ -75,20 +75,42 @@ export default function MarketingHeader() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 	return (
-		<header className="bg-white">
+		<header className="bg-black z-50">
 			<nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
 
 
 				{/* Logo */}
 				<div className="flex lg:flex-1">
 					<Link href="/" className="flex items-center space-x-2 z-10">
-						<div className="w-8 h-8 rounded-sm bg-[#D97C4E] flex items-center justify-center overflow-hidden relative">
-							<div className="absolute inset-0 bg-gradient-to-br from-[#D97C4E] to-[#946B4A]"></div>
-							<span className="relative text-white font-serif text-lg">c</span>
+						<div className="w-8 h-8 rounded-sm flex items-center justify-center overflow-hidden relative
+                                bg-[#D97C4E]
+                            "
+                        >
+							<div className="absolute inset-0 
+                                    bg-gradient-to-br 
+                                    from-[#D97C4E] 
+                                    to-[#946B4A]
+                                
+                                "
+                            ></div>
+							<span className="relative font-serif text-lg
+                                    text-slate-50
+                                "
+                            >c</span>
 						</div>
 						<div className="font-serif text-xl leading-none tracking-tight">
-							<span className="font-semibold">curator</span>
-							<span className="font-light">AI</span>
+							<span className="font-semibold
+                                    text-slate-50
+                                "
+                            >
+                                curator
+                            </span>
+							<span className="font-light
+                                    text-slate-50
+                                "
+                            >
+                                AI
+                            </span>
 						</div>
 					</Link>
 				</div>
@@ -102,26 +124,46 @@ export default function MarketingHeader() {
 						onClick={() => setMobileMenuOpen(true)}
 						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-700"
 					>
-						<span className="sr-only">Open main menu</span>
+						<span className="sr-only">
+							Open main menu
+						</span>
 						<Bars3Icon aria-hidden="true" className="size-6" />
 					</button>
 				</div>
+
+
+
 				<PopoverGroup className="hidden lg:flex lg:gap-x-12">
-					<a href="/pricing" className="text-sm/6 font-semibold text-zinc-900">
+
+
+					<Link 
+						href="/pricing" 
+						className="text-sm/6 font-semibold text-slate-50"
+					>
 						Pricing
-					</a>
-					<a href="/enterprise" className="text-sm/6 font-semibold text-zinc-900">
+					</Link>
+
+
+					<Link 
+						href="/enterprise" 
+						className="text-sm/6 font-semibold text-slate-50"
+					>
 						Entertprise
-					</a>
+					</Link>
+
+
 					<Popover className="relative">
-						<PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-zinc-900">
+
+
+						<PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-slate-50">
 							Resources
-							<ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-zinc-400" />
+							<ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-slate-50" />
 						</PopoverButton>
+
 
 						<PopoverPanel
 							transition
-							className="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-zinc-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+							className="absolute top-full -left-8 z-50 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-zinc-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
 						>
 							<div className="p-4">
 								{resources.map((item) => (
@@ -161,6 +203,8 @@ export default function MarketingHeader() {
 
 
 						</PopoverPanel>
+
+
 					</Popover>
 
 					
@@ -172,12 +216,19 @@ export default function MarketingHeader() {
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center gap-4">
 
 
-					<a href="#" className="text-sm/6 font-semibold text-zinc-900">
+					<Link 
+						href="/signin" 
+						className="text-sm/6 font-semibold text-zinc-50"
+					>
 						Sign in
-					</a>
+					</Link>
 
-					<Button>
-						Build your Agent
+					<Button className=''>
+						<Link 
+							href="/pricing"
+						>
+								Build your Agent
+						</Link>
 					</Button>
 
 
@@ -268,7 +319,7 @@ export default function MarketingHeader() {
 								
 								<a
 									href="/signin"
-									className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-zinc-900 hover:bg-zinc-50"
+									className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-zinc-50 hover:bg-zinc-900"
 								>
 									Sign in
 								</a>
@@ -283,6 +334,10 @@ export default function MarketingHeader() {
 					</div>
 				</DialogPanel>
 			</Dialog>
+
+
+
+
 		</header>
 	)
 }
