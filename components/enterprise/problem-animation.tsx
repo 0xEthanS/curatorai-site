@@ -135,7 +135,7 @@ export const LinenInTheWind = (props: any) => {
 
 
 
-	const containerRef = useRef(null)
+	const containerRef:any = useRef(null)
 	const [currentZoom, setCurrentZoom] = useState(zoom)
 
 
@@ -155,7 +155,10 @@ export const LinenInTheWind = (props: any) => {
 
 
 	// Phase 4: Generate config from props
-	const CONFIG = React.useMemo(() => createConfig(props), [props])
+	const CONFIG:any = React.useMemo(
+		() => createConfig(props), 
+		[props]
+	)
 
 
 
@@ -171,9 +174,9 @@ export const LinenInTheWind = (props: any) => {
 		frameCount: 0,
 		// Pre-allocated resources
 		geometryPools: {
-			field1: null as THREE.Group | null,
-			field2: null as THREE.Group | null,
-			field3: null as THREE.Group | null,
+			field1: null as any | null,
+			field2: null as any | null,
+			field3: null as any | null,
 		},
 		materials: {
 			lineMaterial: null as THREE.LineBasicMaterial | null
@@ -433,7 +436,10 @@ export const LinenInTheWind = (props: any) => {
 
 			return { scene, camera, renderer, mainGroup }
 		}, 
-		[CONFIG, createGeometryPool]
+		[
+			CONFIG, 
+			createGeometryPool
+		]
 	)
 
 

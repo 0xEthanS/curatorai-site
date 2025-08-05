@@ -3,6 +3,9 @@
 import React, { useEffect, useRef, useCallback, useState } from 'react'
 import * as THREE from 'three'
 
+
+
+
 // Configuration object - all magic numbers centralized
 const CONFIG = {
 	PARTICLE_COUNT: 5000,
@@ -33,12 +36,19 @@ const CONFIG = {
 	}
 }
 
-export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
+
+
+
+export const EmptyParticles = (
+	{ 
+		count = CONFIG.PARTICLE_COUNT 
+	}
+) => {
 	const [isVisible, setIsVisible] = useState(true)
-	const mountRef = useRef(null)
+	const mountRef:any = useRef(null)
 	
 	// Single ref object to hold all Three.js references
-	const threeRef = useRef({
+	const threeRef:any = useRef({
 		scene: null,
 		camera: null,
 		renderer: null,
@@ -66,13 +76,13 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 
 
 	// Cleanup timeouts ref
-	const timeoutsRef = useRef([])
+	const timeoutsRef:any = useRef([])
 
 
 
 
 	// 1. Scene Creation Function
-	const createScene = useCallback((container) => {
+	const createScene = useCallback((container:any) => {
 		const width = container.clientWidth
 		const height = container.clientHeight
 		
@@ -114,117 +124,120 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 
 
 	// 2. Particle System Creation Function
-	const createParticleSystem = useCallback(() => {
-		const { scene } = threeRef.current
-		if (!scene) return
+	const createParticleSystem = useCallback(
+		() => {
+			const { scene } = threeRef.current
+			if (!scene) return
 
-		// Create shader material
-		const particleMaterial = new THREE.ShaderMaterial({
-			uniforms: {
-				time: { value: 0 },
-				opacity: { value: CONFIG.PARTICLE_OPACITY }
-			},
-			vertexShader: `
-				uniform float time;
-				attribute float size;
-				attribute vec3 customColor;
-				varying vec3 vColor;
+			// Create shader material
+			const particleMaterial = new THREE.ShaderMaterial({
+				uniforms: {
+					time: { value: 0 },
+					opacity: { value: CONFIG.PARTICLE_OPACITY }
+				},
+				vertexShader: `
+					uniform float time;
+					attribute float size;
+					attribute vec3 customColor;
+					varying vec3 vColor;
+					
+					void main() {
+						vColor = customColor;
+						vec3 pos = position;
+						
+						float radius = length(pos.xz);
+						float angle = atan(pos.z, pos.x);
+						float height = pos.y;
+						
+						float vessel = smoothstep(0.3, 0.7, radius) * 
+													smoothstep(1.0, 0.7, radius);
+						
+						angle += time * 0.08;
+						
+						float space = sin(time * 0.3 + radius * 3.0) * 0.1;
+						float newRadius = (radius + space) * vessel;
+						
+						vec3 newPos;
+						newPos.x = cos(angle) * newRadius;
+						newPos.z = sin(angle) * newRadius;
+						newPos.y = height * vessel - 1.2;
+						
+						newPos *= 2.75;
+						
+						vec4 mvPosition = modelViewMatrix * vec4(newPos, 1.0);
+						gl_PointSize = size * (128.0 / -mvPosition.z);
+						gl_Position = projectionMatrix * mvPosition;
+					}
+				`,
+				fragmentShader: `
+					uniform float opacity;
+					varying vec3 vColor;
+					void main() {
+						vec2 center = gl_PointCoord - vec2(0.5);
+						float dist = dot(center, center);
+						
+						if (dist > 0.25) discard;
+						
+						float alpha = (1.0 - smoothstep(0.2025, 0.25, dist)) * opacity;
+						gl_FragColor = vec4(vColor, alpha);
+					}
+				`,
+				transparent: true,
+				depthWrite: false,
+				blending: THREE.NormalBlending,
+				side: THREE.DoubleSide,
+				vertexColors: true
+			})
+			threeRef.current.material = particleMaterial
+
+			// Generate particle data
+			const positions = new Float32Array(count * 3)
+			const colors = new Float32Array(count * 3)
+			const sizes = new Float32Array(count)
+
+			let i3 = 0
+			for (let i = 0; i < count; i++) {
+				const t = i / count
+				const radius = Math.pow(t, CONFIG.PARTICLES.RADIUS_POWER)
+				const angle = t * Math.PI * CONFIG.PARTICLES.SPIRAL_TURNS
 				
-				void main() {
-					vColor = customColor;
-					vec3 pos = position;
-					
-					float radius = length(pos.xz);
-					float angle = atan(pos.z, pos.x);
-					float height = pos.y;
-					
-					float vessel = smoothstep(0.3, 0.7, radius) * 
-												smoothstep(1.0, 0.7, radius);
-					
-					angle += time * 0.08;
-					
-					float space = sin(time * 0.3 + radius * 3.0) * 0.1;
-					float newRadius = (radius + space) * vessel;
-					
-					vec3 newPos;
-					newPos.x = cos(angle) * newRadius;
-					newPos.z = sin(angle) * newRadius;
-					newPos.y = height * vessel - 1.2;
-					
-					newPos *= 2.75;
-					
-					vec4 mvPosition = modelViewMatrix * vec4(newPos, 1.0);
-					gl_PointSize = size * (128.0 / -mvPosition.z);
-					gl_Position = projectionMatrix * mvPosition;
-				}
-			`,
-			fragmentShader: `
-				uniform float opacity;
-				varying vec3 vColor;
-				void main() {
-					vec2 center = gl_PointCoord - vec2(0.5);
-					float dist = dot(center, center);
-					
-					if (dist > 0.25) discard;
-					
-					float alpha = (1.0 - smoothstep(0.2025, 0.25, dist)) * opacity;
-					gl_FragColor = vec4(vColor, alpha);
-				}
-			`,
-			transparent: true,
-			depthWrite: false,
-			blending: THREE.NormalBlending,
-			side: THREE.DoubleSide,
-			vertexColors: true
-		})
-		threeRef.current.material = particleMaterial
+				const vesselHeight = Math.sin(t * Math.PI) * CONFIG.PARTICLES.HEIGHT_SCALE
+				
+				const randRadius = radius + (Math.random() - 0.5) * CONFIG.PARTICLES.RANDOMNESS
+				const randAngle = angle + (Math.random() - 0.5) * CONFIG.PARTICLES.ANGLE_RANDOMNESS
+				
+				positions[i3] = Math.cos(randAngle) * randRadius
+				positions[i3 + 1] = vesselHeight
+				positions[i3 + 2] = Math.sin(randAngle) * randRadius
 
-		// Generate particle data
-		const positions = new Float32Array(count * 3)
-		const colors = new Float32Array(count * 3)
-		const sizes = new Float32Array(count)
+				const shade = CONFIG.PARTICLES.BASE_SHADE + 
+										Math.sqrt(radius) * CONFIG.PARTICLES.SHADE_VARIATION + 
+										Math.random() * CONFIG.PARTICLES.SHADE_RANDOMNESS
+				colors[i3] = shade
+				colors[i3 + 1] = shade
+				colors[i3 + 2] = shade
 
-		let i3 = 0
-		for (let i = 0; i < count; i++) {
-			const t = i / count
-			const radius = Math.pow(t, CONFIG.PARTICLES.RADIUS_POWER)
-			const angle = t * Math.PI * CONFIG.PARTICLES.SPIRAL_TURNS
+				sizes[i] = (1.0 - Math.abs(vesselHeight * 0.5)) * CONFIG.PARTICLES.SIZE_VARIATION + CONFIG.PARTICLES.BASE_SIZE
+				
+				i3 += 3
+			}
+
+			// Create geometry
+			const geometry = new THREE.BufferGeometry()
+			geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
+			geometry.setAttribute('customColor', new THREE.BufferAttribute(colors, 3))
+			geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1))
+			geometry.computeBoundingBox()
+			geometry.computeBoundingSphere()
+			threeRef.current.geometry = geometry
 			
-			const vesselHeight = Math.sin(t * Math.PI) * CONFIG.PARTICLES.HEIGHT_SCALE
-			
-			const randRadius = radius + (Math.random() - 0.5) * CONFIG.PARTICLES.RANDOMNESS
-			const randAngle = angle + (Math.random() - 0.5) * CONFIG.PARTICLES.ANGLE_RANDOMNESS
-			
-			positions[i3] = Math.cos(randAngle) * randRadius
-			positions[i3 + 1] = vesselHeight
-			positions[i3 + 2] = Math.sin(randAngle) * randRadius
-
-			const shade = CONFIG.PARTICLES.BASE_SHADE + 
-									 Math.sqrt(radius) * CONFIG.PARTICLES.SHADE_VARIATION + 
-									 Math.random() * CONFIG.PARTICLES.SHADE_RANDOMNESS
-			colors[i3] = shade
-			colors[i3 + 1] = shade
-			colors[i3 + 2] = shade
-
-			sizes[i] = (1.0 - Math.abs(vesselHeight * 0.5)) * CONFIG.PARTICLES.SIZE_VARIATION + CONFIG.PARTICLES.BASE_SIZE
-			
-			i3 += 3
-		}
-
-		// Create geometry
-		const geometry = new THREE.BufferGeometry()
-		geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
-		geometry.setAttribute('customColor', new THREE.BufferAttribute(colors, 3))
-		geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1))
-		geometry.computeBoundingBox()
-		geometry.computeBoundingSphere()
-		threeRef.current.geometry = geometry
-		
-		// Create points mesh
-		const points = new THREE.Points(geometry, particleMaterial)
-		threeRef.current.points = points
-		scene.add(points)
-	}, [count])
+			// Create points mesh
+			const points = new THREE.Points(geometry, particleMaterial)
+			threeRef.current.points = points
+			scene.add(points)
+		}, 
+		[count]
+	)
 
 
 
@@ -238,7 +251,7 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 		const targetInterval = 1000 / CONFIG.TARGET_FPS
 		
 		// Detects Visibility
-		const animate = (currentTime) => {
+		const animate = (currentTime:any) => {
 			threeRef.current.animationId = requestAnimationFrame(animate)
 
 			// Pause when tab is hidden
@@ -266,8 +279,8 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 	const setupResizeHandling = useCallback(() => {
 		if (!mountRef.current) return
 
-		let resizeTimeout = null
-		let observerTimeout = null
+		let resizeTimeout:any = null
+		let observerTimeout:any = null
 
 		const handleResize = () => {
 			if (resizeTimeout) clearTimeout(resizeTimeout)
@@ -275,7 +288,7 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 			resizeTimeout = setTimeout(() => {
 				if (!mountRef.current || !threeRef.current.camera || !threeRef.current.renderer) return
 				
-				const container = mountRef.current
+				const container:any = mountRef.current
 				const width = container.clientWidth
 				const height = container.clientHeight
 				
@@ -317,7 +330,7 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 
 		
 		// Clear timeouts
-		timeoutsRef.current.forEach(clearFn => clearFn())
+		timeoutsRef.current.forEach((clearFn:any) => clearFn())
 		timeoutsRef.current = []
 		
 
@@ -420,8 +433,6 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 			className='
 				w-auto 
 				h-[50vh] 
-
-			
 				rounded-2xl
 			'
 		/>
@@ -430,5 +441,6 @@ export const EmptyParticles = ({ count = CONFIG.PARTICLE_COUNT }) => {
 
 	
 }
+
 
 
