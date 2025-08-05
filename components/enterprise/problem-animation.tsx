@@ -12,26 +12,8 @@ import * as THREE from 'three'
 
 
 
-
-// Phase 4: SSR-safe mobile detection helper
-const isMobile = () => {
-	// Return false during SSR (server-side rendering)
-	if (typeof window === 'undefined' || typeof navigator === 'undefined') {
-		return false
-	}
-	
-	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-		window.innerWidth < 768
-}
-
-
-
-
-// Phase 4: Dynamic configuration factory
+// Dynamic configuration factory
 const createConfig = (props: any) => {
-
-
-	const mobile = isMobile() && !props.forceDesktopQuality
 	
 	return {
 		// Animation timing - now configurable
@@ -44,8 +26,8 @@ const createConfig = (props: any) => {
 			SECONDARY_ROTATION_AMPLITUDE: (props.rotationAmplitude ?? 1) * 0.1,
 			TIME_OFFSET_1: 0.33,
 			TIME_OFFSET_2: 0.66,
-			GEOMETRY_UPDATE_INTERVAL: mobile ? 3 : 1,
-			TARGET_FPS: props.targetFPS ?? (mobile ? 30 : 60)
+			GEOMETRY_UPDATE_INTERVAL: 1,
+			TARGET_FPS: props.targetFPS ?? 60
 		},
 
 		// Wave source configuration - now customizable
@@ -66,20 +48,20 @@ const createConfig = (props: any) => {
 
 		// Field settings - now configurable
 		FIELD: {
-			RESOLUTION: props.resolution ?? (mobile ? 16 : 32),
+			RESOLUTION: props.resolution ?? 32,
 			SIZE_MULTIPLIER: 4,
 			SCALE_1: 1.5,
 			SCALE_2: 0.8,
 			SCALE_3: 0.8,
 			INTERFERENCE_THRESHOLD: 0.2,
-			FIELD_COUNT: props.fieldCount ?? (mobile ? 1 : 3)
+			FIELD_COUNT: props.fieldCount ?? 3
 		},
 
 		// Visual appearance - now customizable
 		VISUAL: {
 			BACKGROUND_COLOR: props.backgroundColor ?? 0xF0EEE6,
 			LINE_COLOR: props.lineColor ?? 0x333333,
-			LINE_OPACITY: props.lineOpacity ?? (mobile ? 0.3 : 0.4)
+			LINE_OPACITY: props.lineOpacity ?? 0.4
 		},
 
 		// Camera settings - now configurable
@@ -93,11 +75,10 @@ const createConfig = (props: any) => {
 		// Lighting configuration - now configurable
 		LIGHTING: {
 			AMBIENT_INTENSITY: 0.4,
-			DIRECTIONAL_INTENSITY: mobile ? 0.4 : 0.6,
-			POINT_INTENSITY: mobile ? 0.2 : 0.4,
+			DIRECTIONAL_INTENSITY: 0.6,
+			POINT_INTENSITY: 0.4,
 			DIRECTIONAL_POSITION: [5, 5, 5],
 			POINT_POSITION: [-5, 3, -5],
-			ENABLE_COMPLEX: props.enableComplexLighting ?? !mobile
 		},
 
 		// Field positioning and rotation
@@ -110,8 +91,7 @@ const createConfig = (props: any) => {
 
 		// Renderer settings - now configurable
 		RENDERER: {
-			MAX_PIXEL_RATIO: props.maxPixelRatio ?? (mobile ? 1 : 2),
-			ANTIALIAS: props.enableAntialiasing ?? !mobile
+			MAX_PIXEL_RATIO: props.maxPixelRatio ?? 2,
 		}
 	}
 }
@@ -124,7 +104,7 @@ export const LinenInTheWind = (props: any) => {
 	const [isVisible, setIsVisible] = useState(true)
 
 
-	// Phase 4: Destructure props with defaults
+	// Destructure props with defaults
 	const {
 		width = '100%',
 		height = '400px',
@@ -137,6 +117,8 @@ export const LinenInTheWind = (props: any) => {
 
 	const containerRef:any = useRef(null)
 	const [currentZoom, setCurrentZoom] = useState(zoom)
+
+
 
 
 	useEffect(() => {
@@ -154,7 +136,7 @@ export const LinenInTheWind = (props: any) => {
 
 
 
-	// Phase 4: Generate config from props
+	// Generate config from props
 	const CONFIG:any = React.useMemo(
 		() => createConfig(props), 
 		[props]
@@ -688,7 +670,7 @@ export const LinenInTheWind = (props: any) => {
 
 
 
-	// Phase 4: Update zoom when prop changes
+	// Update zoom when prop changes
 	useEffect(() => {
 		setCurrentZoom(zoom)
 		if (threeRef.current.camera) {
@@ -699,7 +681,6 @@ export const LinenInTheWind = (props: any) => {
 
 
 
-	// Phase 4: Flexible container with proper sizing
 	return (
 		<div 
 			ref={containerRef}
@@ -707,7 +688,7 @@ export const LinenInTheWind = (props: any) => {
 			style={{ 
 				width: width,
 				height: height,
-				minHeight: '200px', // Prevent it from being too small
+				minHeight: '200px',
 				position: 'relative',
 				overflow: 'hidden'
 			}}
